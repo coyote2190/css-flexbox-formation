@@ -1,0 +1,406 @@
+.jumbotron {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron h1 {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  background: #495057;
+  padding: 10px 0;
+  color: #fff;
+}
+
+footer p {
+  margin-bottom: 0.25rem;
+}
+
+.bg-light {
+  background-color: #e9ecef !important;
+}
+
+.box-code {
+  background-color: #adb5bd !important;
+  border-radius: 5px;
+  padding: 10px;
+}
+.presentation {
+  padding: 50px 0;
+}
+.presentation p {
+  text-align: left;
+}
+.presentation ul li {
+  color: #6c757d !important;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+@media (min-width: 1200px) {
+  .container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+    max-width: 1340px;
+  }
+}
+.flex-direction .container .row .list {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+.flex-direction .container .row .list div {
+  font-weight: 400;
+}
+.flex-direction .container .row .list div:nth-child(1) {
+  background-color: #cac8c3;
+}
+.flex-direction .container .row .list div:nth-child(2) {
+  background-color: #6ba2da;
+}
+.flex-direction .container .row .list div:nth-child(3) {
+  background-color: #eef588;
+}
+.flex-direction .container .row .list div:nth-child(4) {
+  background-color: #de9860;
+}
+.flex-direction .container .row .list div:nth-child(5) {
+  background-color: #a872ef;
+}
+.flex-direction .container .row .list div:nth-child(6) {
+  background-color: #bce274;
+}
+.flex-direction .container .row .list div:nth-child(7) {
+  background-color: #de6f60;
+}
+.flex-direction .container .row .list.case2 {
+  flex-direction: row-reverse;
+}
+.flex-direction .container .row .list.case3 {
+  flex-direction: column;
+}
+.flex-direction .container .row .list.case4 {
+  flex-direction: column-reverse;
+}
+
+.flex-wrap .container .row .list {
+  display: flex;
+  flex-wrap: nowrap;
+  padding: 0;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+.flex-wrap .container .row .list div {
+  font-weight: 400;
+  width: 25%;
+}
+.flex-wrap .container .row .list div:nth-child(1) {
+  background-color: #cac8c3;
+}
+.flex-wrap .container .row .list div:nth-child(2) {
+  background-color: #6ba2da;
+}
+.flex-wrap .container .row .list div:nth-child(3) {
+  background-color: #eef588;
+}
+.flex-wrap .container .row .list div:nth-child(4) {
+  background-color: #de9860;
+}
+.flex-wrap .container .row .list div:nth-child(5) {
+  background-color: #a872ef;
+}
+.flex-wrap .container .row .list div:nth-child(6) {
+  background-color: #bce274;
+}
+.flex-wrap .container .row .list div:nth-child(7) {
+  background-color: #de6f60;
+}
+.flex-wrap .container .row .list.case2 {
+  flex-wrap: wrap;
+}
+.flex-wrap .container .row .list.case3 {
+  flex-wrap: wrap-reverse;
+}
+
+.flex-flow .container .row .list {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+.flex-flow .container .row .list div {
+  font-weight: 400;
+  width: 25%;
+}
+.flex-flow .container .row .list div:nth-child(1) {
+  background-color: #cac8c3;
+}
+.flex-flow .container .row .list div:nth-child(2) {
+  background-color: #6ba2da;
+}
+.flex-flow .container .row .list div:nth-child(3) {
+  background-color: #eef588;
+}
+.flex-flow .container .row .list div:nth-child(4) {
+  background-color: #de9860;
+}
+.flex-flow .container .row .list div:nth-child(5) {
+  background-color: #a872ef;
+}
+.flex-flow .container .row .list div:nth-child(6) {
+  background-color: #bce274;
+}
+.flex-flow .container .row .list div:nth-child(7) {
+  background-color: #de6f60;
+}
+.flex-flow .container .row .list.case2 {
+  flex-flow: row wrap-reverse;
+}
+.flex-flow .container .row .list.case3 {
+  flex-flow: column wrap;
+}
+.flex-flow .container .row .list.case4 {
+  flex-flow: column wrap-reverse;
+}
+.flex-flow .container .row .list.case5 {
+  flex-flow: column-reverse wrap;
+}
+
+.flex-grow .template {
+  display: flex;
+}
+.flex-grow .template .item1 {
+  background-color: #007bff;
+  flex-grow: 1;
+}
+.flex-grow .template .item2 {
+  background-color: #ffc107;
+  flex-grow: 0;
+}
+.flex-grow .template .item3 {
+  background-color: #28a745;
+  flex-grow: 0;
+}
+.flex-grow .template.case2 .item1 {
+  flex-grow: 1;
+}
+.flex-grow .template.case2 .item2 {
+  flex-grow: 1;
+}
+.flex-grow .template.case2 .item3 {
+  flex-grow: 2;
+}
+.flex-grow .template.case3 .item1 {
+  flex-grow: 1;
+}
+.flex-grow .template.case3 .item2 {
+  flex-grow: 2;
+}
+.flex-grow .template.case3 .item3 {
+  flex-grow: 1;
+}
+
+.flex-shrink .template {
+  display: flex;
+  background: #fff;
+  padding: 10px;
+  width: 600px;
+}
+.flex-shrink .template .item1 {
+  background-color: #007bff;
+  flex-shrink: 0;
+  width: 250px;
+}
+.flex-shrink .template .item2 {
+  background-color: #ffc107;
+  flex-shrink: 0;
+  width: 250px;
+}
+.flex-shrink .template .item3 {
+  background-color: #28a745;
+  flex-shrink: 0;
+  width: 250px;
+}
+.flex-shrink .template.case2 .item1 {
+  flex-shrink: 1;
+}
+.flex-shrink .template.case2 .item2 {
+  flex-shrink: 1;
+}
+.flex-shrink .template.case2 .item3 {
+  flex-shrink: 1;
+}
+.flex-shrink .template.case3 .item1 {
+  flex-shrink: 2;
+}
+.flex-shrink .template.case3 .item2 {
+  flex-shrink: 0;
+}
+.flex-shrink .template.case3 .item3 {
+  flex-shrink: 4;
+}
+
+.flex-basis .template {
+  display: flex;
+  background: #fff;
+  padding: 10px;
+  width: 600px;
+}
+.flex-basis .template .item1 {
+  background-color: #007bff;
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.flex-basis .template .item2 {
+  background-color: #ffc107;
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.flex-basis .template .item3 {
+  background-color: #28a745;
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+.flex-basis .template.case2 .item1 {
+  flex-basis: 0;
+}
+.flex-basis .template.case2 .item2 {
+  flex-basis: auto;
+}
+.flex-basis .template.case2 .item3 {
+  flex-basis: auto;
+}
+.flex-basis .template.case3 .item1 {
+  flex-basis: 0;
+}
+.flex-basis .template.case3 .item2 {
+  flex-basis: 200px;
+}
+.flex-basis .template.case3 .item3 {
+  flex-basis: 0;
+}
+
+.flex .template {
+  display: flex;
+}
+.flex .template .item1 {
+  background-color: #007bff;
+  flex: 1 1 auto;
+}
+.flex .template .item2 {
+  background-color: #ffc107;
+  flex: 2 1 auto;
+}
+.flex .template .item3 {
+  background-color: #28a745;
+  flex: 1 1 150px;
+}
+.flex .template.case2 .item1 {
+  flex-grow: 1;
+}
+.flex .template.case2 .item2 {
+  flex-grow: 1;
+}
+.flex .template.case2 .item3 {
+  flex-grow: 2;
+}
+.flex .template.case3 .item1 {
+  flex-grow: 1;
+}
+.flex .template.case3 .item2 {
+  flex-grow: 2;
+}
+.flex .template.case3 .item3 {
+  flex-grow: 1;
+}
+
+.flex-justify-content .container .list {
+  display: flex;
+  padding: 0;
+  margin-bottom: 30px;
+  background-color: #fff;
+}
+.flex-justify-content .container .list div {
+  font-weight: 400;
+}
+.flex-justify-content .container .list div:nth-child(1) {
+  background-color: #cac8c3;
+}
+.flex-justify-content .container .list div:nth-child(2) {
+  background-color: #6ba2da;
+}
+.flex-justify-content .container .list div:nth-child(3) {
+  background-color: #eef588;
+}
+.flex-justify-content .container .list div:nth-child(4) {
+  background-color: #de9860;
+}
+.flex-justify-content .container .list div:nth-child(5) {
+  background-color: #a872ef;
+}
+.flex-justify-content .container .list div:nth-child(6) {
+  background-color: #bce274;
+}
+.flex-justify-content .container .list div:nth-child(7) {
+  background-color: #de6f60;
+}
+.flex-justify-content .container .list.example1 {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.flex-justify-content .container .list.example1 div {
+  width: 160px;
+}
+.flex-justify-content .container .list.example2 {
+  justify-content: space-between;
+  flex-direction: row;
+}
+.flex-justify-content .container .list.example2 div {
+  width: 100px;
+}
+.flex-justify-content .container .list.example3 {
+  justify-content: space-around;
+  flex-direction: row;
+}
+.flex-justify-content .container .list.example3 div {
+  width: 100px;
+}
+.flex-justify-content .container .list.example4 {
+  width: 200px;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 250px;
+}
+.flex-justify-content .container .list.example5 {
+  width: 200px;
+  flex-direction: column;
+  height: 250px;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,48 @@
+.flex-basis {
+  .template {
+    display: flex;
+    background: #fff;
+    padding: 10px;
+    width: 600px;
+    .item1 {
+      background-color: #007bff;
+      flex-basis: auto;
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+    .item2 {
+      background-color: #ffc107;
+      flex-basis: auto;
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+    .item3 {
+      background-color: #28a745;
+      flex-basis: auto;
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+    &.case2 {
+      .item1 {
+        flex-basis: 0;
+      }
+      .item2 {
+        flex-basis: auto;
+      }
+      .item3 {
+        flex-basis: auto;
+      }
+    }
+    &.case3 {
+      .item1 {
+        flex-basis: 0;
+      }
+      .item2 {
+        flex-basis: 200px;
+      }
+      .item3 {
+        flex-basis: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.flex-grow {
+  .template {
+    display: flex;
+    .item1 {
+      background-color: #007bff;
+      flex-grow: 1;
+    }
+    .item2 {
+      background-color: #ffc107;
+      flex-grow: 0;
+    }
+    .item3 {
+      background-color: #28a745;
+      flex-grow: 0;
+    }
+    &.case2 {
+      .item1 {
+        flex-grow: 1;
+      }
+      .item2 {
+        flex-grow: 1;
+      }
+      .item3 {
+        flex-grow: 2;
+      }
+    }
+    &.case3 {
+      .item1 {
+        flex-grow: 1;
+      }
+      .item2 {
+        flex-grow: 2;
+      }
+      .item3 {
+        flex-grow: 1;
+      }
+    }
+  }
+}

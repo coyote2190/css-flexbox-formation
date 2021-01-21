@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="Yannick Khalfouni" />
+    <title>Mémento FlexBox</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../src/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../src/css/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a href="/" class="navbar-brand d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              aria-hidden="true"
+              class="mr-2"
+              viewBox="0 0 24 24"
+              focusable="false"
+            >
+              <path
+                d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+              />
+              <circle cx="12" cy="13" r="4" />
+            </svg>
+            <strong>FlexBox </strong>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+      <section class="presentation">
+        <div class="container">
+          <h1>Flex-direction</h1>
+          <div class="row justify-content-between">
+            <div class="col-md-6">
+              <p class="lead text-muted">
+                La propriété flex-direction définit la façon dont les éléments flexibles sont placés
+                dans un conteneur flexible : elle définit l'axe principal et la direction des
+                éléments (normale ou inversée).
+              </p>
+            </div>
+            <div class="col-md-5">
+              <p class="lead text-muted">La propriété flex-direction a comme valeur :</p>
+              <ul>
+                <li><b>row</b> (distribution horizontale, valeur par défaut)</li>
+                <li><b>row-reverse</b> (distribution horizontale inversée)</li>
+                <li><b>column</b> (distribution verticale)</li>
+                <li><b>column-reverse</b> (distribution verticale inversée)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="flex-direction py-5 bg-light">
+        <div class="container">
+          <h2>Cas 1 : Display flex</h2>
+          <div class="row mb-5">
+            <div class="col-md-3">
+              <div class="box-code">
+                <h4 class="font-italic">Code</h4>
+                <p>.list{ <br />display: flex; <br />}</p>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="list">
+                <div>300 g de farine</div>
+                <div>3 oeufs entiers</div>
+                <div>3 c. à soupe de sucre</div>
+                <div>2 c. à soupe d'huile</div>
+                <div>50 g de beurre fondu</div>
+                <div>60 cl de lait</div>
+                <div>5 cl de rhum</div>
+              </div>
+            </div>
+          </div>
+
+          <h2>Cas 2 : Flex-direction: row-reverse</h2>
+          <div class="row mb-5">
+            <div class="col-md-3">
+              <div class="box-code">
+                <h4 class="font-italic">Code</h4>
+                <p>
+                  .list{ <br />display: flex;<br />flex-direction: row-reverse<br />
+                  }
+                </p>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="list case2">
+                <div>300 g de farine</div>
+                <div>3 oeufs entiers</div>
+                <div>3 c. à soupe de sucre</div>
+                <div>2 c. à soupe d'huile</div>
+                <div>50 g de beurre fondu</div>
+                <div>60 cl de lait</div>
+                <div>5 cl de rhum</div>
+              </div>
+            </div>
+          </div>
+
+          <h2>Cas 3 : Flex-direction: column</h2>
+          <div class="row mb-5">
+            <div class="col-md-3">
+              <div class="box-code">
+                <h4 class="font-italic">Code</h4>
+                <p>
+                  .list{ <br />display: flex;<br />flex-direction: column<br />
+                  }
+                </p>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="list case3">
+                <div>300 g de farine</div>
+                <div>3 oeufs entiers</div>
+                <div>3 c. à soupe de sucre</div>
+                <div>2 c. à soupe d'huile</div>
+                <div>50 g de beurre fondu</div>
+                <div>60 cl de lait</div>
+                <div>5 cl de rhum</div>
+              </div>
+            </div>
+          </div>
+
+          <h2>Cas 4 : Flex-direction: column-reverse</h2>
+          <div class="row mb-5">
+            <div class="col-md-3">
+              <div class="box-code">
+                <h4 class="font-italic">Code</h4>
+                <p>
+                  .list{ <br />display: flex;<br />flex-direction: column-reverse<br />
+                  }
+                </p>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="list case4">
+                <div>300 g de farine</div>
+                <div>3 oeufs entiers</div>
+                <div>3 c. à soupe de sucre</div>
+                <div>2 c. à soupe d'huile</div>
+                <div>50 g de beurre fondu</div>
+                <div>60 cl de lait</div>
+                <div>5 cl de rhum</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>FlexBox &copy; yk</p>
+      </div>
+    </footer>
+    <script src="../src/js/jquery/jquery-3.5.1.min.js"></script>
+    <script src="../src/js/bootstrap/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

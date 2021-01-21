@@ -1,0 +1,39 @@
+.flex {
+  .template {
+    display: flex;
+    .item1 {
+      background-color: #007bff;
+      flex: 1 1 auto;
+    }
+    .item2 {
+      background-color: #ffc107;
+      flex: 2 1 auto;
+    }
+    .item3 {
+      background-color: #28a745;
+      flex: 1 1 150px;
+    }
+    &.case2 {
+      .item1 {
+        flex-grow: 1;
+      }
+      .item2 {
+        flex-grow: 1;
+      }
+      .item3 {
+        flex-grow: 2;
+      }
+    }
+    &.case3 {
+      .item1 {
+        flex-grow: 1;
+      }
+      .item2 {
+        flex-grow: 2;
+      }
+      .item3 {
+        flex-grow: 1;
+      }
+    }
+  }
+}

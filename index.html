@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="Yannick Khalfouni" />
+    <title>Mémento FlexBox</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="src/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="src/css/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">About</h4>
+              <p class="text-muted">
+                Add some information about the album below, the author, or any other background
+                context. Make it a few sentences long so folks can pick up some informative tidbits.
+                Then, link them off to some social networking sites or contact information.
+              </p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Contact</h4>
+              <ul class="list-unstyled">
+                <li><a href="#" class="text-white">Follow on Twitter</a></li>
+                <li><a href="#" class="text-white">Like on Facebook</a></li>
+                <li><a href="#" class="text-white">Email me</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a href="/" class="navbar-brand d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              aria-hidden="true"
+              class="mr-2"
+              viewBox="0 0 24 24"
+              focusable="false"
+            >
+              <path
+                d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+              />
+              <circle cx="12" cy="13" r="4" />
+            </svg>
+            <strong>FlexBox</strong>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+      <section class="jumbotron text-center">
+        <div class="container">
+          <h1>FlexBox</h1>
+          <p class="lead text-muted">
+            Something short and leading about the collection below—its contents, the creator, etc.
+            Make it short and sweet, but not too short so folks don’t simply skip over it entirely.
+          </p>
+          <p>
+            <a href="#" class="btn btn-primary my-2">Main call to action</a>
+            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+          </p>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <h1>Cours</h1>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <div class="card-header">Flex-direction</div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        href="examples/flex-direction.html"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Voir le cours
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <div class="card-header">Flex-wrap</div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        href="examples/flex-wrap.html"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Voir le cours
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <div class="card-header">Flex-flow</div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        href="examples/flex-flow.html"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Voir le cours
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- flex-grow -->
+            <div class="col-md-3">
+              <div class="card mb-4 shadow-sm">
+                <div class="card-header">flex-grow</div>
+                <div class="card-body">
+                  <p class="card-text">
+                    Permet à un élement de s'élargir pour occuper une proportion de l'espace libre
+                    restant.
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        href="examples/flex-grow.html"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Voir le cours
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- flex-shrink -->
+            <div class="col-md-3">
+              <div class="card mb-4 shadow-sm">
+                <div class="card-header">flex-shrink</div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        href="examples/flex-shrink.html"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Voir le cours
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- flex-basis -->
+            <div class="col-md-3">
+              <div class="card mb-4 shadow-sm">
+                <div class="card-header">flex-basis</div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        href="examples/flex-basis.html"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Voir le cours
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- flex -->
+            <div class="col-md-3">
+              <div class="card mb-4 shadow-sm">
+                <div class="card-header">flex</div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        href="examples/flex.html"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Voir le cours
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <a href="examples/flex-container-item.html" class="btn btn-sm btn-outline-secondary">
+              flex-container-item
+            </a>
+
+            <a href="examples/flex-justify-content.html" class="btn btn-sm btn-outline-secondary">
+              flex-justify-content
+            </a>
+
+            <a href="examples/flex-grow-shrink-basis.html" class="btn btn-sm btn-outline-secondary">
+              flex-grow-shrink-basis
+            </a> -->
+          </div>
+        </div>
+      </div>
+      <div class="album py-5 bg-light">
+        <div class="container">
+          <h1>Exemples</h1>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>FlexBox &copy; yk</p>
+      </div>
+    </footer>
+    <script src="src/js/jquery/jquery-3.5.1.min.js"></script>
+    <script src="src/js/bootstrap/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
