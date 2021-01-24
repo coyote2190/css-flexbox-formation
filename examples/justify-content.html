@@ -47,28 +47,49 @@
     <main role="main">
       <section class="presentation">
         <div class="container">
-          <h1>Flex</h1>
+          <h1>justify-content</h1>
           <div class="row justify-content-between">
             <div class="col-md-6">
               <p class="lead text-muted">
-                La propriété flex est une propriété raccourcie qui définit la
-                capacité d'un élément flexible à modifier ses dimensions afin de
-                remplir l'espace disponible de son conteneur. Les propriétés
-                détaillées correspondantes à cette propriété raccourcie sont
-                flex-grow, flex-shrink et flex-basis.
+                La propriété CSS justify-content indique la façon dont l'espace
+                doit être réparti entre et autour des éléments selon l'axe
+                principal d'un conteneur flexible ou selon l'axe en ligne
+                lorsque le conteneur est une grille.
               </p>
             </div>
             <div class="col-md-5">
               <p class="lead text-muted">
-                La propriété flex-direction a comme valeur :
+                La propriété justify-conten a comme valeur :
               </p>
               <ul>
+                <li><b>center</b>Éléments groupés au centre</li>
+                <li><b>start</b>; /* Éléments groupés au début/</li>
+                <li<b>end</b>>; /* Éléments groupés à la fin</li>
+                <li><b>flex-start</b>f; /* Éléments flexibles groupés au début</li>
+                <li><b>flex-end</b> Éléments flexibles groupés à la fin</li>
+                <li><b>left</b>Éléments groupés à gauche</li>
+                <li><b>right</b>Éléments groupés à droite</li>
+                <li><b>normal</b>;</li>
                 <li>
-                  <b>row</b> (distribution horizontale, valeur par défaut)
+                  <b>space-between</b>; /* Les éléments sont répartis équitablement Le
+                  bord du premier est aligné sur le début du conteneur et la fin
+                  du dernier est alignée sur la fin du conteneur */
                 </li>
-                <li><b>row-reverse</b> (distribution horizontale inversée)</li>
-                <li><b>column</b> (distribution verticale)</li>
-                <li><b>column-reverse</b> (distribution verticale inversée)</li>
+                <li>
+                  <b>space-around</b>d; /* Les éléments sont répartis équitablement À
+                  chaque extrémité, entre le bord du conteneur et le
+                  premier/dernier élément on a la moitié de l'espace appliqué
+                  entre chaque élément */
+                </li>
+                <li>
+                  <b>space-evenly</b>; /* Les éléments sont répartis équitablement Tous
+                  les éléments sont séparés par le même espace */
+                </li>
+                <li>
+                  <b>stretch</b>; /* Les éléments sont répartis équitablement et les
+                  éléments dimensionnés avec 'auto' sont étirés afin de remplir
+                  le conteneur */
+                </li>
               </ul>
             </div>
           </div>
