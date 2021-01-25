@@ -57,38 +57,27 @@
                 lorsque le conteneur est une grille.
               </p>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-6">
               <p class="lead text-muted">
-                La propriété justify-conten a comme valeur :
+                La propriété justify-content a comme valeur :
               </p>
               <ul>
-                <li><b>center</b>Éléments groupés au centre</li>
-                <li><b>start</b>; /* Éléments groupés au début/</li>
-                <li<b>end</b>>; /* Éléments groupés à la fin</li>
-                <li><b>flex-start</b>f; /* Éléments flexibles groupés au début</li>
-                <li><b>flex-end</b> Éléments flexibles groupés à la fin</li>
-                <li><b>left</b>Éléments groupés à gauche</li>
-                <li><b>right</b>Éléments groupés à droite</li>
-                <li><b>normal</b>;</li>
                 <li>
-                  <b>space-between</b>; /* Les éléments sont répartis équitablement Le
-                  bord du premier est aligné sur le début du conteneur et la fin
-                  du dernier est alignée sur la fin du conteneur */
+                  <b>flex-start</b> (valeur par défaut) : Les éléments flexibles
+                  groupés au début
                 </li>
                 <li>
-                  <b>space-around</b>d; /* Les éléments sont répartis équitablement À
-                  chaque extrémité, entre le bord du conteneur et le
-                  premier/dernier élément on a la moitié de l'espace appliqué
-                  entre chaque élément */
+                  <b>flex-end</b> : Les éléments flexibles groupés à la fin
+                </li>
+                <li><b>center</b> : Les éléments groupés au centre</li>
+                <li>
+                  <b>space-between</b> : Les Éléments sont répartis de manière
+                  égale sur la ligne ; le premier est au début de la ligne, le
+                  dernier est à la fin
                 </li>
                 <li>
-                  <b>space-evenly</b>; /* Les éléments sont répartis équitablement Tous
-                  les éléments sont séparés par le même espace */
-                </li>
-                <li>
-                  <b>stretch</b>; /* Les éléments sont répartis équitablement et les
-                  éléments dimensionnés avec 'auto' sont étirés afin de remplir
-                  le conteneur */
+                  <b>space-around</b> : Les Éléments sont répartis de manière
+                  égale sur la ligne avec le même espacement entre chacune
                 </li>
               </ul>
             </div>
@@ -96,67 +85,124 @@
         </div>
       </section>
 
-      <div class="flex py-5 bg-light">
+      <div class="justify-content py-5 bg-light">
         <div class="container">
-          <h2>Cas 1 :</h2>
+          <h2>justify-content: flex-start</h2>
           <div class="row mb-5">
             <div class="col-md-3">
               <div class="box-code">
                 <h4 class="font-italic">Code</h4>
                 <p>
-                  .template {<br />
-                  flex: 1 1 auto; <br />
+                  .flex-container {<br />
+                  display: flex; <br />
+                  justify-content: flex-start;<br />
                   }
                 </p>
               </div>
             </div>
             <div class="col-md-9">
-              <div class="template">
-                <div class="item1">Ingrédients</div>
-                <div class="item2">Preparation</div>
-                <div class="item3">Information</div>
+              <div class="flex-container">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
               </div>
             </div>
           </div>
 
-          <h2>Cas 2 :</h2>
+          <h2>justify-content: flex-end</h2>
           <div class="row mb-5">
             <div class="col-md-3">
               <div class="box-code">
                 <h4 class="font-italic">Code</h4>
                 <p>
-                  .template {<br />
-                  flex: 2 1 auto; <br />
+                  .flex-container {<br />
+                  display: flex; <br />
+                  justify-content: flex-end;<br />
                   }
                 </p>
               </div>
             </div>
             <div class="col-md-9">
-              <div class="template case2">
-                <div class="item1">Ingrédients</div>
-                <div class="item2">Preparation</div>
-                <div class="item3">Information</div>
+              <div class="flex-container case2">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
               </div>
             </div>
           </div>
 
-          <h2>Cas 3 :</h2>
+          <h2>justify-content: center</h2>
           <div class="row mb-5">
             <div class="col-md-3">
               <div class="box-code">
                 <h4 class="font-italic">Code</h4>
                 <p>
-                  .template {<br />
-                  flex: 1 1 150px; <br />
+                  .flex-container {<br />
+                  display: flex; <br />
+                  justify-content: center;<br />
                   }
                 </p>
               </div>
             </div>
             <div class="col-md-9">
-              <div class="template case3">
-                <div class="item1">Ingrédients</div>
-                <div class="item2">Preparation</div>
-                <div class="item3">Information</div>
+              <div class="flex-container case3">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+              </div>
+            </div>
+          </div>
+
+          <h2>justify-content: space-between</h2>
+          <div class="row mb-5">
+            <div class="col-md-3">
+              <div class="box-code">
+                <h4 class="font-italic">Code</h4>
+                <p>
+                  .flex-container {<br />
+                  display: flex; <br />
+                  justify-content: space-between;<br />
+                  }
+                </p>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="flex-container case4">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+              </div>
+            </div>
+          </div>
+
+          <h2>justify-content: space-around</h2>
+          <div class="row mb-5">
+            <div class="col-md-3">
+              <div class="box-code">
+                <h4 class="font-italic">Code</h4>
+                <p>
+                  .flex-container {<br />
+                  display: flex; <br />
+                  justify-content: space-around;<br />
+                  }
+                </p>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="flex-container case5">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
               </div>
             </div>
           </div>

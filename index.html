@@ -22,10 +22,7 @@
             <div class="col-sm-8 col-md-7 py-4">
               <h4 class="text-white">About</h4>
               <p class="text-muted">
-                Add some information about the album below, the author, or any
-                other background context. Make it a few sentences long so folks
-                can pick up some informative tidbits. Then, link them off to
-                some social networking sites or contact information.
+                sass --watch src/scss/index.scss src/css/index.css
               </p>
             </div>
             <div class="col-sm-4 offset-md-1 py-4">
@@ -72,24 +69,41 @@
         <div class="container">
           <h1>FlexBox</h1>
           <p class="lead text-muted">
-            Something short and leading about the collection below—its contents,
-            the creator, etc. Make it short and sweet, but not too short so
-            folks don’t simply skip over it entirely.
-          </p>
-          <p>
-            <a href="#" class="btn btn-primary my-2">Main call to action</a>
-            <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+            Les Flex Box CSS sont un standard CSS3 de disposition des éléments
+            dans une page web. Ce standard permet d'avoir un design adaptatif à
+            l'écran. Les éléments peuvent être réagencés selon la taille de
+            l'écran
           </p>
         </div>
       </section>
 
       <div class="album py-5 bg-light">
         <div class="container">
-          <h1>Cours</h1>
+          <h1>Base</h1>
           <div class="row">
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
-                <div class="card-header">Flex-direction</div>
+                <div class="card-header">Display</div>
+                <div class="card-body">
+                  <p class="card-text">
+                    <b>display: flex;</b><br />
+                    C'est ainsi qu'on définit un container flex.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr />
+          <h1>CSS Flex Container - élément parent</h1>
+          <p>
+            Voici les propriétés qui s'appliquent à l'élément parent, le
+            container.
+          </p>
+          <div class="row">
+            <!-- flex-direction -->
+            <div class="col-md-4">
+              <div class="card mb-4 shadow-sm">
+                <div class="card-header">flex-direction</div>
                 <div class="card-body">
                   <p class="card-text">Lorem ipsum</p>
                   <div
@@ -109,9 +123,10 @@
               </div>
             </div>
 
+            <!-- flex-wrap -->
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
-                <div class="card-header">Flex-wrap</div>
+                <div class="card-header">flex-wrap</div>
                 <div class="card-body">
                   <p class="card-text">Lorem ipsum</p>
                   <div
@@ -131,9 +146,10 @@
               </div>
             </div>
 
+            <!-- flex-flow -->
             <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
-                <div class="card-header">Flex-flow</div>
+                <div class="card-header">flex-flow</div>
                 <div class="card-body">
                   <p class="card-text">Lorem ipsum</p>
                   <div
@@ -153,6 +169,83 @@
               </div>
             </div>
 
+            <!-- justify-content -->
+            <div class="col-md-3">
+              <div class="card mb-4 shadow-sm">
+                <div class="card-header">justify-content</div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        href="examples/justify-content.html"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Voir le cours
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- align-items -->
+            <div class="col-md-3">
+              <div class="card mb-4 shadow-sm">
+                <div class="card-header">align-items</div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        href="examples/align-items.html"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Voir le cours
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- align-content -->
+            <div class="col-md-3">
+              <div class="card mb-4 shadow-sm">
+                <div class="card-header">align-content</div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        href="examples/align-content.html"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Voir le cours
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <hr />
+          <h1>CSS Flex Items - éléments enfants</h1>
+          <p>
+            Voici les propriétés qui s'appliquent aux éléments enfants, les
+            items flex.
+          </p>
+          <div class="row">
             <!-- flex-grow -->
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
@@ -248,17 +341,8 @@
               </div>
             </div>
 
-            <!-- <a href="examples/flex-container-item.html" class="btn btn-sm btn-outline-secondary">
-              flex-container-item
-            </a>
-
-            <a href="examples/flex-justify-content.html" class="btn btn-sm btn-outline-secondary">
-              flex-justify-content
-            </a>
-
-            <a href="examples/flex-grow-shrink-basis.html" class="btn btn-sm btn-outline-secondary">
-              flex-grow-shrink-basis
-            </a> -->
+            <!-- align-self -->
+            <!-- order -->
           </div>
         </div>
       </div>

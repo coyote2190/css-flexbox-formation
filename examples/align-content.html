@@ -47,33 +47,69 @@
     <main role="main">
       <section class="presentation">
         <div class="container">
-          <h1>Flex-flow</h1>
+          <h1>align-content</h1>
           <div class="row justify-content-between">
             <div class="col-md-6">
               <p class="lead text-muted">
-                La propriété CSS flex-flow est une propriété raccourcie pour les
-                propriétés flex-direction et flex-wrap.
+                La propriété align-content aligne les lignes d'un container flex
+                à l'intérieur de l'espace où il reste de l'espace sur l'axe
+                cross, un peu comme justify-content aligne les items sur l'axe
+                principal.
               </p>
+            </div>
+            <div class="col-md-6">
+              <p class="lead text-muted">
+                La propriété align-content a comme valeur :
+              </p>
+              <ul>
+                <li>
+                  <b>stretch</b> (par défaut) les lignes s’étirent pour
+                  recouvrir tout l’espace.
+                </li>
+                <li>
+                  <b>flex-start</b> les lignes sont regroupées au début du
+                  container
+                </li>
+                <li>
+                  <b>flex-end</b> les lignes sont regroupées à la fin du
+                  container
+                </li>
+                <li>
+                  <b>center</b> les lignes sont regroupées au centre du
+                  container
+                </li>
+                <li>
+                  <b>space-between</b> les lignes sont réparties de manière
+                  égale ; la première ligne est au début du container, la
+                  dernière est à la fin
+                </li>
+                <li>
+                  <b>space-around</b> les lignes sont réparties de manière égale
+                  avec le même espacement entre chacune
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <div class="flex-flow py-5 bg-light">
+      <div class="align-content py-5 bg-light">
         <div class="container">
-          <h2>flex-flow: row wrap</h2>
+          <h2>align-content: flex-start</h2>
           <div class="row mb-5">
             <div class="col-md-3">
               <div class="box-code">
                 <h4 class="font-italic">Code</h4>
                 <p>
-                  .flex-container{ <br />display: flex; <br />flex-flow: row
-                  wrap;<br />}
+                  .flex-container {<br />
+                  display: flex; <br />
+                  align-content: flex-start;<br />
+                  }
                 </p>
               </div>
             </div>
             <div class="col-md-9">
-              <div class="flex-container">
+              <div class="flex-container case">
                 <div class="item">1</div>
                 <div class="item">2</div>
                 <div class="item">3</div>
@@ -86,14 +122,15 @@
             </div>
           </div>
 
-          <h2>flex-flow: row wrap-reverse</h2>
+          <h2>align-content: flex-end</h2>
           <div class="row mb-5">
             <div class="col-md-3">
               <div class="box-code">
                 <h4 class="font-italic">Code</h4>
                 <p>
-                  .flex-container{ <br />display: flex;<br />flex-flow: row
-                  wrap-reverse<br />
+                  .flex-container {<br />
+                  display: flex; <br />
+                  align-content: flex-end;<br />
                   }
                 </p>
               </div>
@@ -112,14 +149,15 @@
             </div>
           </div>
 
-          <h2>flex-flow: column wrap</h2>
+          <h2>align-content: center</h2>
           <div class="row mb-5">
             <div class="col-md-3">
               <div class="box-code">
                 <h4 class="font-italic">Code</h4>
                 <p>
-                  .flex-container{ <br />display: flex;<br />
-                  flex-flow: column wrap;<br />
+                  .flex-container {<br />
+                  display: flex; <br />
+                  align-content: center;<br />
                   }
                 </p>
               </div>
@@ -130,18 +168,23 @@
                 <div class="item">2</div>
                 <div class="item">3</div>
                 <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
               </div>
             </div>
           </div>
 
-          <h2>flex-flow: column wrap-reverse</h2>
+          <h2>align-content: space-between</h2>
           <div class="row mb-5">
             <div class="col-md-3">
               <div class="box-code">
                 <h4 class="font-italic">Code</h4>
                 <p>
-                  .flex-container{ <br />display: flex;<br />
-                  flex-flow: column wrap-reverse;<br />
+                  .flex-container {<br />
+                  display: flex; <br />
+                  align-content: space-between;<br />
                   }
                 </p>
               </div>
@@ -152,18 +195,23 @@
                 <div class="item">2</div>
                 <div class="item">3</div>
                 <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
               </div>
             </div>
           </div>
 
-          <h2>flex-flow: column-reverse wrap</h2>
+          <h2>align-content: space-around</h2>
           <div class="row mb-5">
             <div class="col-md-3">
               <div class="box-code">
                 <h4 class="font-italic">Code</h4>
                 <p>
-                  .flex-container{ <br />display: flex;<br />
-                  flex-flow: column-reverse wrap;<br />
+                  .flex-container {<br />
+                  display: flex; <br />
+                  align-content: space-around;<br />
                   }
                 </p>
               </div>
@@ -174,6 +222,37 @@
                 <div class="item">2</div>
                 <div class="item">3</div>
                 <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+              </div>
+            </div>
+          </div>
+
+          <h2>align-content: stretch</h2>
+          <div class="row mb-5">
+            <div class="col-md-3">
+              <div class="box-code">
+                <h4 class="font-italic">Code</h4>
+                <p>
+                  .flex-container {<br />
+                  display: flex; <br />
+                  align-content: stretch;<br />
+                  }
+                </p>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="flex-container case6">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
               </div>
             </div>
           </div>
@@ -181,7 +260,7 @@
       </div>
     </main>
 
-    <footer>
+    <footer class="text-muted">
       <div class="container">
         <p class="float-right">
           <a href="#">Back to top</a>

@@ -47,28 +47,58 @@
     <main role="main">
       <section class="presentation">
         <div class="container">
-          <h1>Flex-flow</h1>
+          <h1>align-items</h1>
           <div class="row justify-content-between">
             <div class="col-md-6">
               <p class="lead text-muted">
-                La propriété CSS flex-flow est une propriété raccourcie pour les
-                propriétés flex-direction et flex-wrap.
+                Elle sert à définir la façon dont les flex items sont disposés
+                le long de l’axe transversal (cross axis) sur la ligne courante.
               </p>
+            </div>
+            <div class="col-md-6">
+              <p class="lead text-muted">
+                La propriété justify-content a comme valeur :
+              </p>
+              <ul>
+                <li>
+                  <b>flex-start</b> : le premier bord (début) des items est
+                  placé au début de la ligne transversale
+                </li>
+                <li>
+                  <b>flex-end</b> : le dernier bord (fin) des items est placé à
+                  la fin de la ligne transversale
+                </li>
+                <li>
+                  <b>center</b> : les items sont regroupés au centre de l'axe
+                  transversal
+                </li>
+                <li>
+                  <b>baseline</b> : les items sont répartis de manière à ce que
+                  leur ligne de base s'aligne
+                </li>
+                <li>
+                  <b>stretch</b> (valeur par défaut) : les items s'étirent de
+                  façon à remplir le conteneur (tout en respectant
+                  min-width/max-width)
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </section>
 
-      <div class="flex-flow py-5 bg-light">
+      <div class="align-items py-5 bg-light">
         <div class="container">
-          <h2>flex-flow: row wrap</h2>
+          <h2>align-items: flex-start</h2>
           <div class="row mb-5">
             <div class="col-md-3">
               <div class="box-code">
                 <h4 class="font-italic">Code</h4>
                 <p>
-                  .flex-container{ <br />display: flex; <br />flex-flow: row
-                  wrap;<br />}
+                  .flex-container {<br />
+                  display: flex; <br />
+                  align-items: flex-start;<br />
+                  }
                 </p>
               </div>
             </div>
@@ -86,14 +116,15 @@
             </div>
           </div>
 
-          <h2>flex-flow: row wrap-reverse</h2>
+          <h2>align-items: flex-end</h2>
           <div class="row mb-5">
             <div class="col-md-3">
               <div class="box-code">
                 <h4 class="font-italic">Code</h4>
                 <p>
-                  .flex-container{ <br />display: flex;<br />flex-flow: row
-                  wrap-reverse<br />
+                  .flex-container {<br />
+                  display: flex; <br />
+                  align-items: flex-end;<br />
                   }
                 </p>
               </div>
@@ -112,14 +143,15 @@
             </div>
           </div>
 
-          <h2>flex-flow: column wrap</h2>
+          <h2>align-items: center</h2>
           <div class="row mb-5">
             <div class="col-md-3">
               <div class="box-code">
                 <h4 class="font-italic">Code</h4>
                 <p>
-                  .flex-container{ <br />display: flex;<br />
-                  flex-flow: column wrap;<br />
+                  .flex-container {<br />
+                  display: flex; <br />
+                  align-items: center;<br />
                   }
                 </p>
               </div>
@@ -130,18 +162,28 @@
                 <div class="item">2</div>
                 <div class="item">3</div>
                 <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
               </div>
             </div>
           </div>
 
-          <h2>flex-flow: column wrap-reverse</h2>
+          <h2>align-items: baseline</h2>
           <div class="row mb-5">
             <div class="col-md-3">
               <div class="box-code">
                 <h4 class="font-italic">Code</h4>
                 <p>
-                  .flex-container{ <br />display: flex;<br />
-                  flex-flow: column wrap-reverse;<br />
+                  .flex-container {<br />
+                  display: flex; <br />
+                  align-items: baseline;<br />
+                  }<br />
+                  .item {<br />
+                  display: flex;<br />
+                  align-items: center;<br />
+                  justify-content: center;<br />
                   }
                 </p>
               </div>
@@ -156,14 +198,15 @@
             </div>
           </div>
 
-          <h2>flex-flow: column-reverse wrap</h2>
+          <h2>align-items: stretch</h2>
           <div class="row mb-5">
             <div class="col-md-3">
               <div class="box-code">
                 <h4 class="font-italic">Code</h4>
                 <p>
-                  .flex-container{ <br />display: flex;<br />
-                  flex-flow: column-reverse wrap;<br />
+                  .flex-container {<br />
+                  display: flex; <br />
+                  align-items: stretch;<br />
                   }
                 </p>
               </div>
@@ -174,6 +217,10 @@
                 <div class="item">2</div>
                 <div class="item">3</div>
                 <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
               </div>
             </div>
           </div>
@@ -181,7 +228,7 @@
       </div>
     </main>
 
-    <footer>
+    <footer class="text-muted">
       <div class="container">
         <p class="float-right">
           <a href="#">Back to top</a>

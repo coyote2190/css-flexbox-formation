@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta name="description" content="" />
     <meta name="author" content="Yannick Khalfouni" />
     <title>Mémento FlexBox</title>
@@ -48,18 +51,24 @@
           <div class="row justify-content-between">
             <div class="col-md-6">
               <p class="lead text-muted">
-                La propriété flex-direction définit la façon dont les éléments flexibles sont placés
-                dans un conteneur flexible : elle définit l'axe principal et la direction des
-                éléments (normale ou inversée).
+                La propriété flex-direction définit la façon dont les éléments
+                flexibles sont placés dans un conteneur flexible : elle définit
+                l'axe principal et la direction des éléments (normale ou
+                inversée).
               </p>
             </div>
             <div class="col-md-5">
-              <p class="lead text-muted">La propriété flex-direction a comme valeur :</p>
+              <p class="lead text-muted">
+                La propriété flex-direction a comme valeur :
+              </p>
               <ul>
-                <li><b>row</b> (distribution horizontale, valeur par défaut)</li>
-                <li><b>row-reverse</b> (distribution horizontale inversée)</li>
-                <li><b>column</b> (distribution verticale)</li>
-                <li><b>column-reverse</b> (distribution verticale inversée)</li>
+                <li>
+                  <b>row</b> (par défaut) : distribution horizontale, valeur par
+                  défaut
+                </li>
+                <li><b>row-reverse</b> : distribution horizontale inversée</li>
+                <li><b>column</b> : distribution verticale</li>
+                <li><b>column-reverse</b> : distribution verticale inversée</li>
               </ul>
             </div>
           </div>
@@ -68,95 +77,89 @@
 
       <div class="flex-direction py-5 bg-light">
         <div class="container">
-          <h2>Cas 1 : Display flex</h2>
-          <div class="row mb-5">
-            <div class="col-md-3">
-              <div class="box-code">
-                <h4 class="font-italic">Code</h4>
-                <p>.list{ <br />display: flex; <br />}</p>
-              </div>
-            </div>
-            <div class="col-md-9">
-              <div class="list">
-                <div>300 g de farine</div>
-                <div>3 oeufs entiers</div>
-                <div>3 c. à soupe de sucre</div>
-                <div>2 c. à soupe d'huile</div>
-                <div>50 g de beurre fondu</div>
-                <div>60 cl de lait</div>
-                <div>5 cl de rhum</div>
-              </div>
-            </div>
-          </div>
-
-          <h2>Cas 2 : Flex-direction: row-reverse</h2>
+          <h2>flex-direction: row</h2>
           <div class="row mb-5">
             <div class="col-md-3">
               <div class="box-code">
                 <h4 class="font-italic">Code</h4>
                 <p>
-                  .list{ <br />display: flex;<br />flex-direction: row-reverse<br />
-                  }
+                  .flex-container{ <br />display: flex; <br />flex-direction:
+                  row <br />}
                 </p>
               </div>
             </div>
             <div class="col-md-9">
-              <div class="list case2">
-                <div>300 g de farine</div>
-                <div>3 oeufs entiers</div>
-                <div>3 c. à soupe de sucre</div>
-                <div>2 c. à soupe d'huile</div>
-                <div>50 g de beurre fondu</div>
-                <div>60 cl de lait</div>
-                <div>5 cl de rhum</div>
+              <div class="flex-container">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
               </div>
             </div>
           </div>
 
-          <h2>Cas 3 : Flex-direction: column</h2>
+          <h2>flex-direction: row-reverse</h2>
           <div class="row mb-5">
             <div class="col-md-3">
               <div class="box-code">
                 <h4 class="font-italic">Code</h4>
                 <p>
-                  .list{ <br />display: flex;<br />flex-direction: column<br />
+                  .flex-container{ <br />display: flex;<br />flex-direction:
+                  row-reverse<br />
                   }
                 </p>
               </div>
             </div>
             <div class="col-md-9">
-              <div class="list case3">
-                <div>300 g de farine</div>
-                <div>3 oeufs entiers</div>
-                <div>3 c. à soupe de sucre</div>
-                <div>2 c. à soupe d'huile</div>
-                <div>50 g de beurre fondu</div>
-                <div>60 cl de lait</div>
-                <div>5 cl de rhum</div>
+              <div class="flex-container case2">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
               </div>
             </div>
           </div>
 
-          <h2>Cas 4 : Flex-direction: column-reverse</h2>
+          <h2>flex-direction: column</h2>
           <div class="row mb-5">
             <div class="col-md-3">
               <div class="box-code">
                 <h4 class="font-italic">Code</h4>
                 <p>
-                  .list{ <br />display: flex;<br />flex-direction: column-reverse<br />
+                  .flex-container{ <br />display: flex;<br />flex-direction:
+                  column<br />
                   }
                 </p>
               </div>
             </div>
             <div class="col-md-9">
-              <div class="list case4">
-                <div>300 g de farine</div>
-                <div>3 oeufs entiers</div>
-                <div>3 c. à soupe de sucre</div>
-                <div>2 c. à soupe d'huile</div>
-                <div>50 g de beurre fondu</div>
-                <div>60 cl de lait</div>
-                <div>5 cl de rhum</div>
+              <div class="flex-container case3">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+              </div>
+            </div>
+          </div>
+
+          <h2>flex-direction: column-reverse</h2>
+          <div class="row mb-5">
+            <div class="col-md-3">
+              <div class="box-code">
+                <h4 class="font-italic">Code</h4>
+                <p>
+                  .flex-container{ <br />display: flex;<br />flex-direction:
+                  column-reverse<br />
+                  }
+                </p>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="flex-container case4">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
               </div>
             </div>
           </div>

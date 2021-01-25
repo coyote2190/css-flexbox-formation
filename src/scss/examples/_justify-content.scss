@@ -1,39 +1,18 @@
 .justify-content {
-  .template {
-    display: flex;
-    .item1 {
-      background-color: #007bff;
-      flex: 1 1 auto;
-    }
-    .item2 {
-      background-color: #ffc107;
-      flex: 2 1 auto;
-    }
-    .item3 {
-      background-color: #28a745;
-      flex: 1 1 150px;
-    }
+  .flex-container {
+    justify-content: flex-start;
+    flex-flow: row wrap;
     &.case2 {
-      .item1 {
-        flex-grow: 1;
-      }
-      .item2 {
-        flex-grow: 1;
-      }
-      .item3 {
-        flex-grow: 2;
-      }
+      justify-content: flex-end;
     }
     &.case3 {
-      .item1 {
-        flex-grow: 1;
-      }
-      .item2 {
-        flex-grow: 2;
-      }
-      .item3 {
-        flex-grow: 1;
-      }
+      justify-content: center;
+    }
+    &.case4 {
+      justify-content: space-between;
+    }
+    &.case5 {
+      justify-content: space-around;
     }
   }
 }

@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta name="description" content="" />
     <meta name="author" content="Yannick Khalfouni" />
     <title>Mémento FlexBox</title>
@@ -48,17 +51,28 @@
           <div class="row justify-content-between">
             <div class="col-md-6">
               <p class="lead text-muted">
-                La propriété flex-wrap indique si les éléments flexibles sont contraints à être
-                disposés sur une seule ligne ou s'ils peuvent être affichés sur plusieurs lignes
-                avec un retour automatique.
+                La propriété flex-wrap indique si les éléments flexibles sont
+                contraints à être disposés sur une seule ligne ou s'ils peuvent
+                être affichés sur plusieurs lignes avec un retour automatique.
               </p>
             </div>
             <div class="col-md-5">
-              <p class="lead text-muted">Les valeurs de la propriété flex-wrap sont :</p>
+              <p class="lead text-muted">
+                Les valeurs de la propriété flex-wrap sont :
+              </p>
               <ul>
-                <li><b>nowrap</b> (les éléments ne passent pas à la ligne, valeur par défaut)</li>
-                <li><b>wrap</b> (les éléments passent à la ligne dans le sens de lecture)</li>
-                <li><b>wrap-reverse</b> (les éléments passent à la ligne dans le sens inverse)</li>
+                <li>
+                  <b>nowrap</b> (valeur par défaut) : les éléments ne passent
+                  pas à la ligne, valeur par défaut
+                </li>
+                <li>
+                  <b>wrap</b> : les éléments passent à la ligne dans le sens de
+                  lecture
+                </li>
+                <li>
+                  <b>wrap-reverse</b> : les éléments passent à la ligne dans le
+                  sens inverse
+                </li>
               </ul>
             </div>
           </div>
@@ -67,71 +81,75 @@
 
       <div class="flex-wrap py-5 bg-light">
         <div class="container">
-          <h2>Cas 1 : Flex-wrap: nowrap;</h2>
-          <div class="row mb-5">
-            <div class="col-md-3">
-              <div class="box-code">
-                <h4 class="font-italic">Code</h4>
-                <p>.list{ <br />display: flex; flex-wrap: nowrap;<br />}</p>
-              </div>
-            </div>
-            <div class="col-md-9">
-              <div class="list">
-                <div>300 g de farine</div>
-                <div>3 oeufs entiers</div>
-                <div>3 c. à soupe de sucre</div>
-                <div>2 c. à soupe d'huile</div>
-                <div>50 g de beurre fondu</div>
-                <div>60 cl de lait</div>
-                <div>5 cl de rhum</div>
-              </div>
-            </div>
-          </div>
-
-          <h2>Cas 2 : Flex-wrap: wrap;</h2>
+          <h2>flex-wrap: nowrap</h2>
           <div class="row mb-5">
             <div class="col-md-3">
               <div class="box-code">
                 <h4 class="font-italic">Code</h4>
                 <p>
-                  .list{ <br />display: flex;<br />flex-wrap: wrap;<br />
-                  }
+                  .flex-container { <br />display: flex;<br />
+                  flex-wrap: nowrap;<br />}
                 </p>
               </div>
             </div>
             <div class="col-md-9">
-              <div class="list case2">
-                <div>300 g de farine</div>
-                <div>3 oeufs entiers</div>
-                <div>3 c. à soupe de sucre</div>
-                <div>2 c. à soupe d'huile</div>
-                <div>50 g de beurre fondu</div>
-                <div>60 cl de lait</div>
-                <div>5 cl de rhum</div>
+              <div class="flex-container">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
               </div>
             </div>
           </div>
 
-          <h2>Cas 3 : Flex-wrap: wrap-reverse;</h2>
+          <h2>flex-wrap: wrap</h2>
           <div class="row mb-5">
             <div class="col-md-3">
               <div class="box-code">
                 <h4 class="font-italic">Code</h4>
                 <p>
-                  .list{ <br />display: flex;<br />flex-wrap: wrap-reverse;<br />
+                  .flex-container{ <br />display: flex;<br />flex-wrap: wrap;<br />
                   }
                 </p>
               </div>
             </div>
             <div class="col-md-9">
-              <div class="list case3">
-                <div>300 g de farine</div>
-                <div>3 oeufs entiers</div>
-                <div>3 c. à soupe de sucre</div>
-                <div>2 c. à soupe d'huile</div>
-                <div>50 g de beurre fondu</div>
-                <div>60 cl de lait</div>
-                <div>5 cl de rhum</div>
+              <div class="flex-container case2">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+              </div>
+            </div>
+          </div>
+
+          <h2>flex-wrap: wrap-reverse</h2>
+          <div class="row mb-5">
+            <div class="col-md-3">
+              <div class="box-code">
+                <h4 class="font-italic">Code</h4>
+                <p>
+                  .flex-container{ <br />display: flex;<br />flex-wrap:
+                  wrap-reverse;<br />
+                  }
+                </p>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="flex-container case3">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
               </div>
             </div>
           </div>
