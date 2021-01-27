@@ -18,9 +18,9 @@
     <!-- sass --watch src/scss/index.scss src/css/index.css -->
 
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">FlexBox</a>
+          <a class="navbar-brand" href="/">FlexBox</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -34,12 +34,12 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
-              <li class="nav-item active">
-                <a class="nav-link" aria-current="page" href="#">Cours</a>
-              </li>
               <li class="nav-item">
-                <a class="nav-link" href="/examples.html"
-                  >Exemples d'utilisation</a
+                <a class="nav-link" href="/">Cours</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="/examples.html"
+                  >Exemples d&#39;utilisation</a
                 >
               </li>
             </ul>
@@ -51,24 +51,23 @@
     <main role="main">
       <section class="jumbotron text-center">
         <div class="container">
-          <h1>FlexBox</h1>
+          <h1>Exemples d'utilisation</h1>
           <p class="lead text-muted">
-            Vous retrouverez ici quelques examples d'utimisation du flex dans
-            votre vie de tous les jours.
+            Vous retrouverez ici quelques exemples d'utilisation du flexbox que
+            vous rencontrerez dans la vie de tous les jours.
           </p>
         </div>
       </section>
 
       <div class="album py-5 bg-light">
         <div class="container">
-          <h1>Exemples :</h1>
+          <h1 class="mb-4">Exemples :</h1>
           <div class="row">
             <!-- formulaire -->
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
                 <div class="card-header">Formulaire</div>
                 <div class="card-body">
-                  <p class="card-text">Lorem ipsum</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -91,7 +90,6 @@
               <div class="card mb-4 shadow-sm">
                 <div class="card-header">Popup</div>
                 <div class="card-body">
-                  <p class="card-text">Lorem ipsum</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -109,19 +107,18 @@
               </div>
             </div>
 
-            <!-- link -->
+            <!-- link-list -->
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
-                <div class="card-header">link</div>
+                <div class="card-header">Link / List</div>
                 <div class="card-body">
-                  <p class="card-text">Lorem ipsum</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div class="btn-group">
                       <a
                         type="button"
-                        href="examples/link.html"
+                        href="examples/link-list.html"
                         class="btn btn-sm btn-outline-secondary"
                       >
                         Voir
@@ -135,16 +132,15 @@
             <!-- template page -->
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
-                <div class="card-header">template page</div>
+                <div class="card-header">Template</div>
                 <div class="card-body">
-                  <p class="card-text">Lorem ipsum</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div class="btn-group">
                       <a
                         type="button"
-                        href="examples/link.html"
+                        href="examples/template.html"
                         class="btn btn-sm btn-outline-secondary"
                       >
                         Voir
@@ -155,19 +151,62 @@
               </div>
             </div>
 
-            <!-- template selction offre -->
+            <!-- Pricing -->
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm">
-                <div class="card-header">template selction offr</div>
+                <div class="card-header">Pricing</div>
                 <div class="card-body">
-                  <p class="card-text">Lorem ipsum</p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
                     <div class="btn-group">
                       <a
                         type="button"
-                        href="examples/link.html"
+                        href="examples/pricing.html"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Voir
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- masonry -->
+            <div class="col-md-3">
+              <div class="card mb-4 shadow-sm">
+                <div class="card-header">masonry</div>
+                <div class="card-body">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        href="examples/masonry.html"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Voir
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- sticky-footer -->
+            <div class="col-md-3">
+              <div class="card mb-4 shadow-sm">
+                <div class="card-header">sticky-footer</div>
+                <div class="card-body">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        href="examples/sticky-footer.html"
                         class="btn btn-sm btn-outline-secondary"
                       >
                         Voir
@@ -182,7 +221,7 @@
       </div>
     </main>
 
-    <footer class="text-muted">
+    <footer class="fixed-bottom text-muted">
       <div class="container">
         <p class="float-right">
           <a href="#">Back to top</a>

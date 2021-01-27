@@ -8,7 +8,7 @@
     />
     <meta name="description" content="" />
     <meta name="author" content="Yannick Khalfouni" />
-    <title>Mémento FlexBox</title>
+    <title>FlexBox</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="src/css/bootstrap/bootstrap.min.css" />
@@ -18,9 +18,9 @@
     <!-- sass --watch src/scss/index.scss src/css/index.css -->
 
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">FlexBox</a>
+          <a class="navbar-brand" href="/">FlexBox</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -35,11 +35,11 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav me-auto mb-2 mb-md-0">
               <li class="nav-item active">
-                <a class="nav-link" aria-current="page" href="#">Cours</a>
+                <a class="nav-link" aria-current="page" href="/">Cours</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="/examples.html"
-                  >Exemples d'utilisation</a
+                  >Exemples d&#39;utilisation</a
                 >
               </li>
             </ul>
@@ -49,15 +49,22 @@
     </header>
 
     <main role="main">
-      <section class="jumbotron text-center">
+      <section class="presentation">
         <div class="container">
           <h1>FlexBox</h1>
-          <p class="lead text-muted">
-            Les Flex Box CSS sont un standard CSS3 de disposition des éléments
-            dans une page web. Ce standard permet d'avoir un design adaptatif à
-            l'écran. Les éléments peuvent être réagencés selon la taille de
-            l'écran
-          </p>
+          <div class="row justify-content-between align-items-center">
+            <div class="col-md-6">
+              <p class="lead text-muted">
+                Les Flex Box CSS sont un standard CSS3 de disposition des
+                éléments dans une page web. Ce standard permet d'avoir un design
+                adaptatif à l'écran. Les éléments peuvent être réagencés selon
+                la taille de l'écran.
+              </p>
+            </div>
+            <div class="col-md-5">
+              <img src="src/img/flexbox.png" alt="flexbox" />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -71,7 +78,9 @@
                 <div class="card-body">
                   <p class="card-text">
                     <b>display: flex;</b><br />
-                    C'est ainsi qu'on définit un container flex.
+                    Permet qu’un élément (flex-container) se comporte comme un
+                    bloc. On utilise généralement les blocs, inline, etc …. Ici
+                    on utilisera flex
                   </p>
                 </div>
               </div>
@@ -80,8 +89,8 @@
           <hr />
           <h1>CSS Flex Container - élément parent</h1>
           <p>
-            Voici les propriétés qui s'appliquent à l'élément parent, le
-            container.
+            C’est un conteneur qui créé le contexte d’affichage pour ses
+            enfants.
           </p>
           <div class="row">
             <!-- flex-direction -->
@@ -89,7 +98,10 @@
               <div class="card mb-4 shadow-sm">
                 <div class="card-header">flex-direction</div>
                 <div class="card-body">
-                  <p class="card-text">Lorem ipsum</p>
+                  <p class="card-text">
+                    Elle définit le sens d’affichage horizontal ou vertical des
+                    éléments flex-item.
+                  </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -99,7 +111,7 @@
                         href="training/flex-direction.html"
                         class="btn btn-sm btn-outline-secondary"
                       >
-                        Voir le cours
+                        En savoir plus
                       </a>
                     </div>
                   </div>
@@ -112,7 +124,10 @@
               <div class="card mb-4 shadow-sm">
                 <div class="card-header">flex-wrap</div>
                 <div class="card-body">
-                  <p class="card-text">Lorem ipsum</p>
+                  <p class="card-text">
+                    Elle gère le contenu qui sera distribué » sur une seule ou
+                    plusieurs ligne(s)/colonne(s).
+                  </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -122,7 +137,7 @@
                         href="training/flex-wrap.html"
                         class="btn btn-sm btn-outline-secondary"
                       >
-                        Voir le cours
+                        En savoir plus
                       </a>
                     </div>
                   </div>
@@ -135,7 +150,10 @@
               <div class="card mb-4 shadow-sm">
                 <div class="card-header">flex-flow</div>
                 <div class="card-body">
-                  <p class="card-text">Lorem ipsum</p>
+                  <p class="card-text">
+                    C’est un raccourci des propriétés flex-direction et
+                    flex-wrap.
+                  </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -145,7 +163,7 @@
                         href="training/flex-flow.html"
                         class="btn btn-sm btn-outline-secondary"
                       >
-                        Voir le cours
+                        En savoir plus
                       </a>
                     </div>
                   </div>
@@ -154,11 +172,14 @@
             </div>
 
             <!-- justify-content -->
-            <div class="col-md-3">
+            <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
                 <div class="card-header">justify-content</div>
                 <div class="card-body">
-                  <p class="card-text">Lorem ipsum</p>
+                  <p class="card-text">
+                    Elle définit les alignements et centrages sur l’axe
+                    principal.
+                  </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -168,7 +189,7 @@
                         href="training/justify-content.html"
                         class="btn btn-sm btn-outline-secondary"
                       >
-                        Voir le cours
+                        En savoir plus
                       </a>
                     </div>
                   </div>
@@ -177,11 +198,14 @@
             </div>
 
             <!-- align-items -->
-            <div class="col-md-3">
+            <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
                 <div class="card-header">align-items</div>
                 <div class="card-body">
-                  <p class="card-text">Lorem ipsum</p>
+                  <p class="card-text">
+                    Elle définit les alignements et centrages sur l’axe
+                    secondaire.
+                  </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -191,7 +215,7 @@
                         href="training/align-items.html"
                         class="btn btn-sm btn-outline-secondary"
                       >
-                        Voir le cours
+                        En savoir plus
                       </a>
                     </div>
                   </div>
@@ -200,11 +224,14 @@
             </div>
 
             <!-- align-content -->
-            <div class="col-md-3">
+            <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
                 <div class="card-header">align-content</div>
                 <div class="card-body">
-                  <p class="card-text">Lorem ipsum</p>
+                  <p class="card-text">
+                    Elle définit l’alignement des rangées, les centre ou les
+                    répartit au sein de l’espace restant dans l’axe secondaire.
+                  </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -214,7 +241,7 @@
                         href="training/align-content.html"
                         class="btn btn-sm btn-outline-secondary"
                       >
-                        Voir le cours
+                        En savoir plus
                       </a>
                     </div>
                   </div>
@@ -226,18 +253,18 @@
           <hr />
           <h1>CSS Flex Items - éléments enfants</h1>
           <p>
-            Voici les propriétés qui s'appliquent aux éléments enfants, les
-            items flex.
+            Des éléments (flex-items) sont des enfants directs du conteneur,
+            quels qu’ils soient. Par exemple, une div, a, p, …
           </p>
           <div class="row">
             <!-- flex-grow -->
-            <div class="col-md-3">
+            <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
                 <div class="card-header">flex-grow</div>
                 <div class="card-body">
                   <p class="card-text">
-                    Permet à un élement de s'élargir pour occuper une proportion
-                    de l'espace libre restant.
+                    Permet à un élément (flex-item) de s’élargir pour occuper
+                    une partie de l’espace libre restant
                   </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
@@ -248,7 +275,7 @@
                         href="training/flex-grow.html"
                         class="btn btn-sm btn-outline-secondary"
                       >
-                        Voir le cours
+                        En savoir plus
                       </a>
                     </div>
                   </div>
@@ -257,11 +284,14 @@
             </div>
 
             <!-- flex-shrink -->
-            <div class="col-md-3">
+            <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
                 <div class="card-header">flex-shrink</div>
                 <div class="card-body">
-                  <p class="card-text">Lorem ipsum</p>
+                  <p class="card-text">
+                    Elle définit le facteur de rétrécissement d’un élément
+                    (flex-item)
+                  </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -271,7 +301,7 @@
                         href="training/flex-shrink.html"
                         class="btn btn-sm btn-outline-secondary"
                       >
-                        Voir le cours
+                        En savoir plus
                       </a>
                     </div>
                   </div>
@@ -280,11 +310,14 @@
             </div>
 
             <!-- flex-basis -->
-            <div class="col-md-3">
+            <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
                 <div class="card-header">flex-basis</div>
                 <div class="card-body">
-                  <p class="card-text">Lorem ipsum</p>
+                  <p class="card-text">
+                    Elle définit les dimensions (hauteur/largeur) d’un élément
+                    (flex-item)
+                  </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -294,7 +327,7 @@
                         href="training/flex-basis.html"
                         class="btn btn-sm btn-outline-secondary"
                       >
-                        Voir le cours
+                        En savoir plus
                       </a>
                     </div>
                   </div>
@@ -303,11 +336,14 @@
             </div>
 
             <!-- flex -->
-            <div class="col-md-3">
+            <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
                 <div class="card-header">flex</div>
                 <div class="card-body">
-                  <p class="card-text">Lorem ipsum</p>
+                  <p class="card-text">
+                    C’est un raccourci des propriétés : flex-grow, flex-shrink
+                    et flex-basis
+                  </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -317,7 +353,7 @@
                         href="training/flex.html"
                         class="btn btn-sm btn-outline-secondary"
                       >
-                        Voir le cours
+                        En savoir plus
                       </a>
                     </div>
                   </div>
@@ -326,11 +362,14 @@
             </div>
 
             <!-- align-self -->
-            <div class="col-md-3">
+            <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
                 <div class="card-header">align-self</div>
                 <div class="card-body">
-                  <p class="card-text">Lorem ipsum</p>
+                  <p class="card-text">
+                    Elle définit l’alignement d’un élément (flex-item)
+                    indépendamment des autres.
+                  </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -340,7 +379,7 @@
                         href="training/align-self.html"
                         class="btn btn-sm btn-outline-secondary"
                       >
-                        Voir le cours
+                        En savoir plus
                       </a>
                     </div>
                   </div>
@@ -349,11 +388,14 @@
             </div>
 
             <!-- order -->
-            <div class="col-md-3">
+            <div class="col-md-4">
               <div class="card mb-4 shadow-sm">
                 <div class="card-header">order</div>
                 <div class="card-body">
-                  <p class="card-text">Lorem ipsum</p>
+                  <p class="card-text">
+                    Elle permet de réordonner au choix chacun des éléments
+                    (flex-item)
+                  </p>
                   <div
                     class="d-flex justify-content-between align-items-center"
                   >
@@ -363,7 +405,7 @@
                         href="training/order.html"
                         class="btn btn-sm btn-outline-secondary"
                       >
-                        Voir le cours
+                        En savoir plus
                       </a>
                     </div>
                   </div>
@@ -378,7 +420,7 @@
     <footer class="text-muted">
       <div class="container">
         <p class="float-right">
-          <a href="#">Back to top</a>
+          <a href="#">Haut de page</a>
         </p>
         <p>FlexBox &copy; yk</p>
       </div>

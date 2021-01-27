@@ -1,4 +1,5 @@
 .example-form {
+  margin-bottom: 50px;
   ul {
     list-style-type: none;
     padding: 0;
@@ -46,13 +47,28 @@
 
   ul li button {
     margin-left: auto;
-    padding: 8px 16px;
-    border: none;
-    background: #333;
-    color: #f2f2f2;
+    margin-top: auto;
+    padding: 8px 15px 6px;
+    font-size: 0.7em;
+    font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 0.09em;
-    border-radius: 2px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 3px;
+    background: #f34a4e;
+    transition: all 0.275s;
+    border: none;
+  }
+
+  ul li svg {
+    margin-left: 20px;
+  }
+
+  .green {
+    color: green;
+  }
+  .red {
+    color: red;
   }
 
   ul.form-inner {

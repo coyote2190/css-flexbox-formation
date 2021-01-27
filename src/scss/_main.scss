@@ -27,6 +27,9 @@ footer {
   background: #495057;
   padding: 10px 0;
   color: #fff;
+  a {
+    color: #fff;
+  }
 }
 
 footer p {
@@ -58,6 +61,9 @@ footer p {
       font-size: 1.25rem;
       font-weight: 300;
     }
+  }
+  img {
+    width: 100%;
   }
 }
 

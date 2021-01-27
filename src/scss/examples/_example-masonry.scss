@@ -1,0 +1,44 @@
+.example-masonry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  .content {
+    display: flex;
+    width: 80%;
+    flex-flow: row wrap;
+    background: #fff;
+    padding: 10px;
+    figure {
+      overflow: hidden;
+      border-radius: 5px;
+      margin: 0 0 8px 8px;
+      background-color: #333;
+      color: white;
+      position: relative;
+      flex: auto;
+      height: 250px;
+      min-width: 150px;
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        filter: brightness(80%);
+        vertical-align: middle;
+        max-width: 100%;
+      }
+    }
+    figure:nth-child(4n + 1) {
+      width: 250px;
+    }
+    figure:nth-child(4n + 2) {
+      width: 325px;
+    }
+    figure:nth-child(4n + 3) {
+      width: 180px;
+    }
+    figure:nth-child(4n + 4) {
+      width: 380px;
+    }
+  }
+}

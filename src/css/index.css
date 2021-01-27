@@ -28,6 +28,9 @@ footer {
   padding: 10px 0;
   color: #fff;
 }
+footer a {
+  color: #fff;
+}
 
 footer p {
   margin-bottom: 0.25rem;
@@ -52,6 +55,9 @@ footer p {
   color: #6c757d !important;
   font-size: 1.25rem;
   font-weight: 300;
+}
+.presentation img {
+  width: 100%;
 }
 
 @media (min-width: 1200px) {
@@ -442,6 +448,9 @@ footer p {
   order: 4;
 }
 
+.example-form {
+  margin-bottom: 50px;
+}
 .example-form ul {
   list-style-type: none;
   padding: 0;
@@ -481,13 +490,26 @@ footer p {
 }
 .example-form ul li button {
   margin-left: auto;
-  padding: 8px 16px;
-  border: none;
-  background: #333;
-  color: #f2f2f2;
+  margin-top: auto;
+  padding: 8px 15px 6px;
+  font-size: 0.7em;
+  font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 0.09em;
-  border-radius: 2px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 3px;
+  background: #f34a4e;
+  transition: all 0.275s;
+  border: none;
+}
+.example-form ul li svg {
+  margin-left: 20px;
+}
+.example-form .green {
+  color: green;
+}
+.example-form .red {
+  color: red;
 }
 .example-form ul.form-inner {
   display: flex;
@@ -528,6 +550,7 @@ footer p {
 }
 .example-popup .content {
   flex: 1 1 auto;
+  background: #fff;
   padding: 10px;
 }
 .example-popup footer {
@@ -539,6 +562,160 @@ footer p {
 }
 .example-popup footer button {
   border-radius: 5px;
+}
+
+.example-template {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  color: #fff;
+}
+.example-template > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+.example-template .header {
+  background: #dc3545;
+}
+.example-template .footer {
+  background: #28a745;
+  order: 4;
+}
+.example-template .aside {
+  flex: 1 0 0;
+}
+.example-template .main {
+  text-align: left;
+  flex: 3 0px;
+  order: 2;
+  background: #17a2b8;
+}
+.example-template .aside-1 {
+  order: 1;
+  background: #ffc107;
+}
+.example-template .aside-2 {
+  order: 3;
+  background: #673ab7;
+}
+
+.example-pricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.example-pricing .card-princing {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 300px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  background-color: #fff;
+}
+.example-pricing .card-princing .card-princing-header {
+  padding: 0.5rem 1rem;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  text-align: center;
+}
+.example-pricing .card-princing .card-princing-header h2 {
+  font-weight: 400 !important;
+  margin: 0;
+}
+.example-pricing .card-princing .card-princing-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.example-pricing .card-princing .card-princing-body ul {
+  padding-left: 0;
+  list-style: none;
+}
+.example-pricing .card-princing .card-princing-body a {
+  align-self: center;
+  margin-top: auto;
+  padding: 8px 15px 6px;
+  font-size: 0.7em;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 3px;
+  background: #f34a4e;
+  transition: all 0.275s;
+}
+
+.example-masonry {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.example-masonry .content {
+  display: flex;
+  width: 80%;
+  flex-flow: row wrap;
+  background: #fff;
+  padding: 10px;
+}
+.example-masonry .content figure {
+  overflow: hidden;
+  border-radius: 5px;
+  margin: 0 0 8px 8px;
+  background-color: #333;
+  color: white;
+  position: relative;
+  flex: auto;
+  height: 250px;
+  min-width: 150px;
+}
+.example-masonry .content figure img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  filter: brightness(80%);
+  vertical-align: middle;
+  max-width: 100%;
+}
+.example-masonry .content figure:nth-child(4n+1) {
+  width: 250px;
+}
+.example-masonry .content figure:nth-child(4n+2) {
+  width: 325px;
+}
+.example-masonry .content figure:nth-child(4n+3) {
+  width: 180px;
+}
+.example-masonry .content figure:nth-child(4n+4) {
+  width: 380px;
+}
+
+.example-link-list .container {
+  display: flex;
+  align-content: space-between;
+  flex-wrap: wrap;
+}
+.example-link-list .container a {
+  display: inline-flex;
+  align-items: center;
+  flex-basis: 100%;
+  margin-bottom: 20px;
+}
+.example-link-list .container a svg {
+  margin: 0 10px 0 0;
+}
+.example-link-list ul {
+  list-style: none;
+  padding-left: 15px;
+}
+.example-link-list ul li {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+.example-link-list ul li svg {
+  color: #03a9f4;
+  margin: 0 10px 0 0;
 }
 
 /*# sourceMappingURL=index.css.map */
