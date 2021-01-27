@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="Yannick Khalfouni" />
+    <title>Mémento FlexBox</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../src/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../src/css/index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a href="/" class="navbar-brand d-flex align-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              aria-hidden="true"
+              class="mr-2"
+              viewBox="0 0 24 24"
+              focusable="false"
+            >
+              <path
+                d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
+              />
+              <circle cx="12" cy="13" r="4" />
+            </svg>
+            <strong>FlexBox </strong>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main role="main">
+      <section class="presentation">
+        <div class="container">
+          <h1>align-self</h1>
+          <div class="row justify-content-between">
+            <div class="col-md-6">
+              <p class="lead text-muted">
+                La propriété align-self permet à des items flex de passer outre
+                aux alignement par défaut ou à ceux spécifiés par align-items.
+                Les valeurs sont les mêmes que pour ce dernier.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p class="lead text-muted">
+                La propriété justify-content a comme valeur :
+              </p>
+              <ul>
+                <li>
+                  <b>flex-start</b> : le premier bord (début) de l'item est
+                  placé au début de la ligne transversale
+                </li>
+                <li>
+                  <b>flex-end</b> : le dernier bord (fin) de l'item est placé à
+                  la fin de la ligne transversale
+                </li>
+                <li><b>center</b> : l'item est centré sur l'axe transversal</li>
+                <li>
+                  <b>baseline</b> : les items sont répartis de manière à ce que
+                  leur ligne de base s'aligne
+                </li>
+                <li>
+                  <b>stretch</b> (valeur par défaut) : les items s'étirent de
+                  façon à remplir le conteneur (tout en respectant
+                  min-width/max-width)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="align-self py-5 bg-light">
+        <div class="container">
+          <h2>align-self: flex-start</h2>
+          <div class="row mb-5">
+            <div class="col-md-3">
+              <div class="box-code">
+                <h4 class="font-italic">Code</h4>
+                <p>
+                  .flex-container {<br />
+                  display: flex; <br />
+                  align-items: center;<br />
+                  }<br />
+                  .flex-container .item03{<br />
+                  align-self: flex-start; <br />
+                  }
+                </p>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="flex-container">
+                <div class="item item01">Bloc 1</div>
+                <div class="item item02">Bloc 2</div>
+                <div class="item item03">Bloc 3</div>
+                <div class="item item04">Bloc 5</div>
+                <div class="item item05">Bloc 5</div>
+              </div>
+            </div>
+          </div>
+
+          <h2>align-self: flex-end</h2>
+          <div class="row mb-5">
+            <div class="col-md-3">
+              <div class="box-code">
+                <h4 class="font-italic">Code</h4>
+                <p>
+                  .flex-container {<br />
+                  display: flex; <br />
+                  align-items: center;<br />
+                  }<br />
+                  .flex-container .item03{<br />
+                  align-self: flex-end; <br />
+                  }
+                </p>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="flex-container case2">
+                <div class="item item01">Bloc 1</div>
+                <div class="item item02">Bloc 2</div>
+                <div class="item item03">Bloc 3</div>
+                <div class="item item04">Bloc 5</div>
+                <div class="item item05">Bloc 5</div>
+              </div>
+            </div>
+          </div>
+
+          <h2>align-self: center</h2>
+          <div class="row mb-5">
+            <div class="col-md-3">
+              <div class="box-code">
+                <h4 class="font-italic">Code</h4>
+                <p>
+                  .flex-container {<br />
+                  display: flex; <br />
+                  align-items: center;<br />
+                  }<br />
+                  .flex-container .item03{<br />
+                  align-self: center; <br />
+                  }
+                </p>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="flex-container case3">
+                <div class="item item01">Bloc 1</div>
+                <div class="item item02">Bloc 2</div>
+                <div class="item item03">Bloc 3</div>
+                <div class="item item04">Bloc 5</div>
+                <div class="item item05">Bloc 5</div>
+              </div>
+            </div>
+          </div>
+
+          <h2>align-self: baseline</h2>
+          <div class="row mb-5">
+            <div class="col-md-3">
+              <div class="box-code">
+                <h4 class="font-italic">Code</h4>
+                <p>
+                  .flex-container {<br />
+                  display: flex; <br />
+                  align-items: center;<br />
+                  }<br />
+                  .flex-container .item03{<br />
+                  align-self: baseline; <br />
+                  }
+                </p>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="flex-container case4">
+                <div class="item item01">Bloc 1</div>
+                <div class="item item02">Bloc 2</div>
+                <div class="item item03">Bloc 3</div>
+                <div class="item item04">Bloc 5</div>
+                <div class="item item05">Bloc 5</div>
+              </div>
+            </div>
+          </div>
+
+          <h2>align-self: stretch</h2>
+          <div class="row mb-5">
+            <div class="col-md-3">
+              <div class="box-code">
+                <h4 class="font-italic">Code</h4>
+                <p>
+                  .flex-container {<br />
+                  display: flex; <br />
+                  align-items: center;<br />
+                  }<br />
+                  .flex-container .item03{<br />
+                  align-self: stretch; <br />
+                  }
+                </p>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="flex-container case5">
+                <div class="item item01">Bloc 1</div>
+                <div class="item item02">Bloc 2</div>
+                <div class="item item03">Bloc 3</div>
+                <div class="item item04">Bloc 5</div>
+                <div class="item item05">Bloc 5</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>FlexBox &copy; yk</p>
+      </div>
+    </footer>
+    <script src="../src/js/jquery/jquery-3.5.1.min.js"></script>
+    <script src="../src/js/bootstrap/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

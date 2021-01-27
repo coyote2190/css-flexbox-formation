@@ -1,37 +1,34 @@
 .flex {
-  .template {
+  .flex-container {
     display: flex;
-    .item1 {
-      background-color: #007bff;
+    .item01 {
       flex: 1 1 auto;
     }
-    .item2 {
-      background-color: #ffc107;
+    .item02 {
       flex: 2 1 auto;
     }
-    .item3 {
-      background-color: #28a745;
+    .item03 {
       flex: 1 1 150px;
     }
     &.case2 {
-      .item1 {
+      .item01 {
         flex-grow: 1;
       }
-      .item2 {
+      .item02 {
         flex-grow: 1;
       }
-      .item3 {
+      .item03 {
         flex-grow: 2;
       }
     }
     &.case3 {
-      .item1 {
+      .item01 {
         flex-grow: 1;
       }
-      .item2 {
+      .item02 {
         flex-grow: 2;
       }
-      .item3 {
+      .item03 {
         flex-grow: 1;
       }
     }

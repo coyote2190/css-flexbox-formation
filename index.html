@@ -15,53 +15,37 @@
     <link rel="stylesheet" href="src/css/index.css" />
   </head>
   <body>
+    <!-- sass --watch src/scss/index.scss src/css/index.css -->
+
     <header>
-      <div class="collapse bg-dark" id="navbarHeader">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-8 col-md-7 py-4">
-              <h4 class="text-white">About</h4>
-              <p class="text-muted">
-                sass --watch src/scss/index.scss src/css/index.css
-              </p>
-            </div>
-            <div class="col-sm-4 offset-md-1 py-4">
-              <h4 class="text-white">Contact</h4>
-              <ul class="list-unstyled">
-                <li><a href="#" class="text-white">Follow on Twitter</a></li>
-                <li><a href="#" class="text-white">Like on Facebook</a></li>
-                <li><a href="#" class="text-white">Email me</a></li>
-              </ul>
-            </div>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">FlexBox</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="#">Cours</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/examples.html"
+                  >Exemples d'utilisation</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-      <div class="navbar navbar-dark bg-dark shadow-sm">
-        <div class="container d-flex justify-content-between">
-          <a href="/" class="navbar-brand d-flex align-items-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              aria-hidden="true"
-              class="mr-2"
-              viewBox="0 0 24 24"
-              focusable="false"
-            >
-              <path
-                d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"
-              />
-              <circle cx="12" cy="13" r="4" />
-            </svg>
-            <strong>FlexBox</strong>
-          </a>
-        </div>
-      </div>
+      </nav>
     </header>
 
     <main role="main">
@@ -112,7 +96,7 @@
                     <div class="btn-group">
                       <a
                         type="button"
-                        href="examples/flex-direction.html"
+                        href="training/flex-direction.html"
                         class="btn btn-sm btn-outline-secondary"
                       >
                         Voir le cours
@@ -135,7 +119,7 @@
                     <div class="btn-group">
                       <a
                         type="button"
-                        href="examples/flex-wrap.html"
+                        href="training/flex-wrap.html"
                         class="btn btn-sm btn-outline-secondary"
                       >
                         Voir le cours
@@ -158,7 +142,7 @@
                     <div class="btn-group">
                       <a
                         type="button"
-                        href="examples/flex-flow.html"
+                        href="training/flex-flow.html"
                         class="btn btn-sm btn-outline-secondary"
                       >
                         Voir le cours
@@ -181,7 +165,7 @@
                     <div class="btn-group">
                       <a
                         type="button"
-                        href="examples/justify-content.html"
+                        href="training/justify-content.html"
                         class="btn btn-sm btn-outline-secondary"
                       >
                         Voir le cours
@@ -204,7 +188,7 @@
                     <div class="btn-group">
                       <a
                         type="button"
-                        href="examples/align-items.html"
+                        href="training/align-items.html"
                         class="btn btn-sm btn-outline-secondary"
                       >
                         Voir le cours
@@ -227,7 +211,7 @@
                     <div class="btn-group">
                       <a
                         type="button"
-                        href="examples/align-content.html"
+                        href="training/align-content.html"
                         class="btn btn-sm btn-outline-secondary"
                       >
                         Voir le cours
@@ -261,7 +245,7 @@
                     <div class="btn-group">
                       <a
                         type="button"
-                        href="examples/flex-grow.html"
+                        href="training/flex-grow.html"
                         class="btn btn-sm btn-outline-secondary"
                       >
                         Voir le cours
@@ -284,7 +268,7 @@
                     <div class="btn-group">
                       <a
                         type="button"
-                        href="examples/flex-shrink.html"
+                        href="training/flex-shrink.html"
                         class="btn btn-sm btn-outline-secondary"
                       >
                         Voir le cours
@@ -307,7 +291,7 @@
                     <div class="btn-group">
                       <a
                         type="button"
-                        href="examples/flex-basis.html"
+                        href="training/flex-basis.html"
                         class="btn btn-sm btn-outline-secondary"
                       >
                         Voir le cours
@@ -330,7 +314,7 @@
                     <div class="btn-group">
                       <a
                         type="button"
-                        href="examples/flex.html"
+                        href="training/flex.html"
                         class="btn btn-sm btn-outline-secondary"
                       >
                         Voir le cours
@@ -342,13 +326,51 @@
             </div>
 
             <!-- align-self -->
+            <div class="col-md-3">
+              <div class="card mb-4 shadow-sm">
+                <div class="card-header">align-self</div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        href="training/align-self.html"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Voir le cours
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <!-- order -->
+            <div class="col-md-3">
+              <div class="card mb-4 shadow-sm">
+                <div class="card-header">order</div>
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum</p>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <a
+                        type="button"
+                        href="training/order.html"
+                        class="btn btn-sm btn-outline-secondary"
+                      >
+                        Voir le cours
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="album py-5 bg-light">
-        <div class="container">
-          <h1>Exemples</h1>
         </div>
       </div>
     </main>

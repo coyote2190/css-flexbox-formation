@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <meta name="description" content="" />
     <meta name="author" content="Yannick Khalfouni" />
     <title>Mémento FlexBox</title>
@@ -44,84 +47,84 @@
     <main role="main">
       <section class="presentation">
         <div class="container">
-          <h1>Flex-Grow</h1>
+          <h1>Flex-shrink</h1>
           <div class="row justify-content-between">
             <div class="col-md-6">
               <p class="lead text-muted">
-                La propriété CSS flex-grow définit le facteur d'expansion d'un élément flexible
-                selon sa dimension principale. Elle indique la quantité d'espace restant que
-                l'élément devrait consommer dans un conteneur flexible relativement à la taille des
-                autres éléments du même conteneur.
+                La propriété flex-shrink définit le facteur de rétrécissement
+                d'un élément flexible. Si la taille de l'ensemble des éléments
+                flexibles est supérieure à la taille du conteneur, les éléments
+                seront comprimés selon leur facteur flex-shrink.
               </p>
             </div>
             <div class="col-md-5">
-              <p class="lead text-muted">La valeur par défaut est 0.</p>
+              <p class="lead text-muted">La valeur par défaut est 1.</p>
             </div>
           </div>
         </div>
       </section>
 
-      <div class="flex-grow py-5 bg-light">
+      <div class="flex-shrink py-5 bg-light">
         <div class="container">
-          <h2>Cas 1 :</h2>
+          <h2>Exemple 1 :</h2>
           <div class="row mb-5">
             <div class="col-md-3">
               <div class="box-code">
                 <h4 class="font-italic">Code</h4>
                 <p>
-                  .item1 { flex-grow: 1; }<br />
-                  .item2 { flex-grow: 0; }<br />
-                  .item3 { flex-grow: 0; }
+                  .item01 { flex-shrink: 0; width: 250px; }<br />
+                  .item02 { flex-shrink: 0; width: 250px; }<br />
+                  .item03 { flex-shrink: 0; width: 250px; }
                 </p>
               </div>
             </div>
             <div class="col-md-9">
-              <div class="template">
-                <div class="item1">Ingrédients</div>
-                <div class="item2">Preparation</div>
-                <div class="item3">Information</div>
+              <div class="flex-container">
+                <div class="item item01">Bloc 1</div>
+                <div class="item item02">Bloc 2</div>
+                <div class="item item03">Bloc 3</div>
               </div>
             </div>
           </div>
 
-          <h2>Cas 2 :</h2>
+          <h2>Exemple 2 :</h2>
           <div class="row mb-5">
             <div class="col-md-3">
               <div class="box-code">
                 <h4 class="font-italic">Code</h4>
                 <p>
-                  .item1 { flex-grow: 1; }<br />
-                  .item2 { flex-grow: 1; }<br />
-                  .item3 { flex-grow: 2; }
+                  .item01 { flex-shrink: 1; width: 250px; }<br />
+                  .item02 { flex-shrink: 1; width: 250px; }<br />
+                  .item03 { flex-shrink: 1; width: 250px; }
                 </p>
               </div>
             </div>
             <div class="col-md-9">
-              <div class="template case2">
-                <div class="item1">Ingrédients</div>
-                <div class="item2">Preparation</div>
-                <div class="item3">Information</div>
+              <div class="flex-container case2">
+                <div class="item item01">Bloc 1</div>
+                <div class="item item02">Bloc 2</div>
+                <div class="item item03">Bloc 3</div>
               </div>
             </div>
           </div>
 
-          <h2>Cas 3 :</h2>
+          <h2>Exemple 3 :</h2>
           <div class="row mb-5">
             <div class="col-md-3">
               <div class="box-code">
                 <h4 class="font-italic">Code</h4>
                 <p>
-                  .item1 { flex-grow: 1; }<br />
-                  .item2 { flex-grow: 2; }<br />
-                  .item3 { flex-grow: 1; }
+                  .item01 { flex-shrink: 2; width: 250px; }<br />
+                  .item02 { flex-shrink: 0; width: 250px; }<br />
+                  .item03 { flex-shrink: 4; width: 250px; }
                 </p>
               </div>
             </div>
             <div class="col-md-9">
-              <div class="template case3">
-                <div class="item1">Ingrédients</div>
-                <div class="item2">Preparation</div>
-                <div class="item3">Information</div>
+              <div class="flex-container case3">
+                <div class="item item01">Bloc 1</div>
+                <div class="item item02">Bloc 2</div>
+                <div class="item item03">Bloc 3</div>
               </div>
             </div>
           </div>

@@ -1,46 +1,43 @@
 .flex-basis {
-  .template {
+  .flex-container {
     display: flex;
     background: #fff;
     padding: 10px;
     width: 600px;
-    .item1 {
-      background-color: #007bff;
+    .item01 {
       flex-basis: auto;
       flex-grow: 1;
       flex-shrink: 1;
     }
-    .item2 {
-      background-color: #ffc107;
+    .item02 {
       flex-basis: auto;
       flex-grow: 1;
       flex-shrink: 1;
     }
-    .item3 {
-      background-color: #28a745;
+    .item03 {
       flex-basis: auto;
       flex-grow: 1;
       flex-shrink: 1;
     }
     &.case2 {
-      .item1 {
+      .item01 {
         flex-basis: 0;
       }
-      .item2 {
+      .item02 {
         flex-basis: auto;
       }
-      .item3 {
+      .item03 {
         flex-basis: auto;
       }
     }
     &.case3 {
-      .item1 {
+      .item01 {
         flex-basis: 0;
       }
-      .item2 {
+      .item02 {
         flex-basis: 200px;
       }
-      .item3 {
+      .item03 {
         flex-basis: 0;
       }
     }
