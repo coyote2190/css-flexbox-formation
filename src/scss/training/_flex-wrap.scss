@@ -1,0 +1,14 @@
+.flex-wrap {
+  .flex-container {
+    flex-wrap: nowrap;
+    .item {
+      width: 25%;
+    }
+    &.case2 {
+      flex-wrap: wrap;
+    }
+    &.case3 {
+      flex-wrap: wrap-reverse;
+    }
+  }
+}

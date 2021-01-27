@@ -1,0 +1,30 @@
+.align-self {
+  .flex-container {
+    align-items: center;
+    width: 500px;
+    height: 168px;
+    .item03 {
+      align-self: flex-start;
+    }
+    &.case2 {
+      .item03 {
+        align-self: flex-end;
+      }
+    }
+    &.case3 {
+      .item03 {
+        align-self: center;
+      }
+    }
+    &.case4 {
+      .item03 {
+        align-self: baseline;
+      }
+    }
+    &.case5 {
+      .item03 {
+        align-self: stretch;
+      }
+    }
+  }
+}

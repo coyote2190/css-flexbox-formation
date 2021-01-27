@@ -1,0 +1,36 @@
+.flex-container {
+  display: flex;
+  background-color: #f8f9fa;
+  .item {
+    padding: 20px;
+    width: 100px;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 500;
+  }
+  .item:nth-child(1) {
+    background-color: #17a2b8;
+  }
+  .item:nth-child(2) {
+    background-color: #dc3545;
+  }
+  .item:nth-child(3) {
+    background-color: #ffc107;
+  }
+  .item:nth-child(4) {
+    background-color: #28a745;
+  }
+  .item:nth-child(5) {
+    background-color: #673ab7;
+  }
+  .item:nth-child(6) {
+    background-color: #3f51b5;
+  }
+  .item:nth-child(7) {
+    background-color: #f44336;
+  }
+  .item:nth-child(8) {
+    background-color: #795548;
+  }
+}

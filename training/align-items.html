@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="Yannick Khalfouni" />
+    <title>FlexBox</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="../src/css/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="../src/css/index.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">FlexBox</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item active">
+                <a class="nav-link" aria-current="page" href="/">Cours</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/examples.html"
+                  >Exemples d&#39;utilisation</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+      <section class="presentation">
+        <div class="container">
+          <h1>align-items</h1>
+          <div class="row justify-content-between">
+            <div class="col-md-6">
+              <p class="lead text-muted">
+                Elle définit les alignements et centrages sur l’axe secondaire.
+              </p>
+            </div>
+            <div class="col-md-6">
+              <p class="lead text-muted">
+                La propriété justify-content a comme valeur :
+              </p>
+              <ul>
+                <li>
+                  <b>flex-start</b> : le premier bord (début) des items est
+                  placé au début de la ligne transversale
+                </li>
+                <li>
+                  <b>flex-end</b> : le dernier bord (fin) des items est placé à
+                  la fin de la ligne transversale
+                </li>
+                <li>
+                  <b>center</b> : les items sont regroupés au centre de l'axe
+                  transversal
+                </li>
+                <li>
+                  <b>baseline</b> : les items sont répartis de manière à ce que
+                  leur ligne de base s'aligne
+                </li>
+                <li>
+                  <b>stretch</b> (valeur par défaut) : les items s'étirent de
+                  façon à remplir le conteneur (tout en respectant
+                  min-width/max-width)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="align-items py-5 bg-light">
+        <div class="container">
+          <h2>align-items: flex-start</h2>
+          <div class="row mb-5">
+            <div class="col-md-3">
+              <div class="box-code">
+                <h4 class="font-italic">Code</h4>
+                <p>
+                  .flex-container {<br />
+                  display: flex; <br />
+                  align-items: flex-start;<br />
+                  }
+                </p>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="flex-container">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+              </div>
+            </div>
+          </div>
+
+          <h2>align-items: flex-end</h2>
+          <div class="row mb-5">
+            <div class="col-md-3">
+              <div class="box-code">
+                <h4 class="font-italic">Code</h4>
+                <p>
+                  .flex-container {<br />
+                  display: flex; <br />
+                  align-items: flex-end;<br />
+                  }
+                </p>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="flex-container case2">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+              </div>
+            </div>
+          </div>
+
+          <h2>align-items: center</h2>
+          <div class="row mb-5">
+            <div class="col-md-3">
+              <div class="box-code">
+                <h4 class="font-italic">Code</h4>
+                <p>
+                  .flex-container {<br />
+                  display: flex; <br />
+                  align-items: center;<br />
+                  }
+                </p>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="flex-container case3">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+              </div>
+            </div>
+          </div>
+
+          <h2>align-items: baseline</h2>
+          <div class="row mb-5">
+            <div class="col-md-3">
+              <div class="box-code">
+                <h4 class="font-italic">Code</h4>
+                <p>
+                  .flex-container {<br />
+                  display: flex; <br />
+                  align-items: baseline;<br />
+                  }<br />
+                  .item {<br />
+                  display: flex;<br />
+                  align-items: center;<br />
+                  justify-content: center;<br />
+                  }
+                </p>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="flex-container case4">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+              </div>
+            </div>
+          </div>
+
+          <h2>align-items: stretch</h2>
+          <div class="row mb-5">
+            <div class="col-md-3">
+              <div class="box-code">
+                <h4 class="font-italic">Code</h4>
+                <p>
+                  .flex-container {<br />
+                  display: flex; <br />
+                  align-items: stretch;<br />
+                  }
+                </p>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <div class="flex-container case5">
+                <div class="item">1</div>
+                <div class="item">2</div>
+                <div class="item">3</div>
+                <div class="item">4</div>
+                <div class="item">5</div>
+                <div class="item">6</div>
+                <div class="item">7</div>
+                <div class="item">8</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Haut de page</a>
+        </p>
+        <p>FlexBox &copy; yk</p>
+      </div>
+    </footer>
+    <script src="../src/js/jquery/jquery-3.5.1.min.js"></script>
+    <script src="../src/js/bootstrap/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

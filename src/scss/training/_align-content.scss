@@ -1,0 +1,26 @@
+.align-content {
+  .flex-container {
+    align-content: flex-start;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 168px;
+    .item {
+      width: 100px;
+    }
+    &.case2 {
+      align-content: flex-end;
+    }
+    &.case3 {
+      align-content: center;
+    }
+    &.case4 {
+      align-content: space-between;
+    }
+    &.case5 {
+      align-content: space-around;
+    }
+    &.case6 {
+      align-content: stretch;
+    }
+  }
+}

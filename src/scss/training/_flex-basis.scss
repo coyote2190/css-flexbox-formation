@@ -1,0 +1,45 @@
+.flex-basis {
+  .flex-container {
+    display: flex;
+    background: #fff;
+    padding: 10px;
+    width: 600px;
+    .item01 {
+      flex-basis: auto;
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+    .item02 {
+      flex-basis: auto;
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+    .item03 {
+      flex-basis: auto;
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+    &.case2 {
+      .item01 {
+        flex-basis: 0;
+      }
+      .item02 {
+        flex-basis: auto;
+      }
+      .item03 {
+        flex-basis: auto;
+      }
+    }
+    &.case3 {
+      .item01 {
+        flex-basis: 0;
+      }
+      .item02 {
+        flex-basis: 200px;
+      }
+      .item03 {
+        flex-basis: 0;
+      }
+    }
+  }
+}

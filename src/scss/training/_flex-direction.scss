@@ -1,0 +1,22 @@
+.flex-direction {
+  .flex-container {
+    flex-direction: row;
+    .item {
+      padding: 20px;
+      width: 100px;
+      color: #fff;
+      font-size: 15px;
+      text-align: center;
+      font-weight: 500;
+    }
+    &.case2 {
+      flex-direction: row-reverse;
+    }
+    &.case3 {
+      flex-direction: column;
+    }
+    &.case4 {
+      flex-direction: column-reverse;
+    }
+  }
+}
