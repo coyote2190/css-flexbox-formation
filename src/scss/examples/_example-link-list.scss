@@ -1,0 +1,29 @@
+.example-link-list {
+  .container {
+    display: flex;
+    align-content: space-between;
+    flex-wrap: wrap;
+    a {
+      display: inline-flex;
+      align-items: center;
+      flex-basis: 100%;
+      margin-bottom: 20px;
+      svg {
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+  ul {
+    list-style: none;
+    padding-left: 15px;
+    li {
+      margin-bottom: 5px;
+      display: flex;
+      align-items: center;
+      svg {
+        color: #03a9f4;
+        margin: 0 10px 0 0;
+      }
+    }
+  }
+}

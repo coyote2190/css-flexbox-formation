@@ -1,0 +1,39 @@
+.example-template {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+  color: #fff;
+  > * {
+    padding: 10px;
+    flex: 1 100%;
+  }
+  .header {
+    background: #dc3545;
+  }
+
+  .footer {
+    background: #28a745;
+    order: 4;
+  }
+
+  .aside {
+    flex: 1 0 0;
+  }
+
+  .main {
+    text-align: left;
+    flex: 3 0px;
+    order: 2;
+    background: #17a2b8;
+  }
+
+  .aside-1 {
+    order: 1;
+    background: #ffc107;
+  }
+
+  .aside-2 {
+    order: 3;
+    background: #673ab7;
+  }
+}

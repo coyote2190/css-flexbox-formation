@@ -1,0 +1,42 @@
+.flex-shrink {
+  .flex-container {
+    display: flex;
+    background: #fff;
+    padding: 10px;
+    width: 600px;
+    .item01 {
+      flex-shrink: 0;
+      width: 250px;
+    }
+    .item02 {
+      flex-shrink: 0;
+      width: 250px;
+    }
+    .item03 {
+      flex-shrink: 0;
+      width: 250px;
+    }
+    &.case2 {
+      .item01 {
+        flex-shrink: 1;
+      }
+      .item02 {
+        flex-shrink: 1;
+      }
+      .item03 {
+        flex-shrink: 1;
+      }
+    }
+    &.case3 {
+      .item01 {
+        flex-shrink: 2;
+      }
+      .item02 {
+        flex-shrink: 0;
+      }
+      .item03 {
+        flex-shrink: 4;
+      }
+    }
+  }
+}

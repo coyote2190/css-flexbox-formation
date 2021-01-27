@@ -1,0 +1,36 @@
+.flex {
+  .flex-container {
+    display: flex;
+    .item01 {
+      flex: 1 1 auto;
+    }
+    .item02 {
+      flex: 2 1 auto;
+    }
+    .item03 {
+      flex: 1 1 150px;
+    }
+    &.case2 {
+      .item01 {
+        flex-grow: 1;
+      }
+      .item02 {
+        flex-grow: 1;
+      }
+      .item03 {
+        flex-grow: 2;
+      }
+    }
+    &.case3 {
+      .item01 {
+        flex-grow: 1;
+      }
+      .item02 {
+        flex-grow: 2;
+      }
+      .item03 {
+        flex-grow: 1;
+      }
+    }
+  }
+}

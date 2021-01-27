@@ -1,0 +1,50 @@
+.order {
+  .flex-container {
+    width: 750px;
+    .item {
+      width: 150px;
+    }
+    .item01 {
+      order: 0;
+    }
+    .item02 {
+      order: 0;
+    }
+    .item03 {
+      order: 0;
+    }
+    .item04 {
+      order: 0;
+    }
+    .item05 {
+      order: 0;
+    }
+    &.case2 {
+      .item01 {
+        order: 1;
+      }
+    }
+    &.case3 {
+      .item05 {
+        order: -1;
+      }
+    }
+    &.case4 {
+      .item01 {
+        order: 12;
+      }
+      .item02 {
+        order: 0;
+      }
+      .item03 {
+        order: -4;
+      }
+      .item04 {
+        order: 8;
+      }
+      .item05 {
+        order: 4;
+      }
+    }
+  }
+}

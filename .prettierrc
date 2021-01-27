@@ -1,11 +1,6 @@
 {
-    "singleQuote": true,
-    "trailingComma": "es5",
-    "jsxBracketSameLine": true,
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "[javascript]": {
-        "editor.formatOnSave": true,
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "jsxBracketSameLine": true,
+  "arrowParens": "avoid"
 }

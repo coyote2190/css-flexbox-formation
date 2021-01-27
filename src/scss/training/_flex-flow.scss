@@ -1,0 +1,21 @@
+.flex-flow {
+  .flex-container {
+    flex-wrap: nowrap;
+    .item {
+      flex-flow: row wrap;
+      width: 25%;
+    }
+    &.case2 {
+      flex-flow: row wrap-reverse;
+    }
+    &.case3 {
+      flex-flow: column wrap;
+    }
+    &.case4 {
+      flex-flow: column wrap-reverse;
+    }
+    &.case5 {
+      flex-flow: column-reverse wrap;
+    }
+  }
+}

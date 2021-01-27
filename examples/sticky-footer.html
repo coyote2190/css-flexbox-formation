@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="Yannick Khalfouni" />
+    <title>FlexBox</title>
+    <style>
+      /******************************************************
+				RESET
+			*******************************************************/
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+
+      /******************************************************
+				PAGE LAYOUT
+			*******************************************************/
+      body {
+        font: 14px/1.5em Arial, sans-serif;
+        background: #e8e4e4;
+      }
+      #page {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      #header,
+      #footer {
+        background: #17a2b8;
+      }
+      #header,
+      #content {
+        padding: 20px;
+      }
+      #content {
+        background: white;
+      }
+      #footer {
+        padding: 20px;
+      }
+
+      /******************************************************
+				BOTTOM FOOTER
+			*******************************************************/
+      #page {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      #content {
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="page">
+      <div id="header">
+        <h1>Flexbox sticky footer</h1>
+      </div>
+      <div id="content">
+        <a class="nav-link" aria-current="page" href="/examples.html">Retour</a>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+          tincidunt finibus eros, vel ornare magna aliquam sed. Nulla vulputate
+          in est nec ultrices. Cras eu quam vel est tempus pulvinar vel eget mi.
+          Morbi tincidunt venenatis auctor. Praesent sodales lorem et elementum
+          varius. Sed sed cursus orci. Nulla aliquam dignissim odio id maximus.
+          Nullam at est non magna mollis ullamcorper in ut neque. Duis in ante
+          vitae magna gravida luctus vitae et urna. Cras sit amet tempor nibh,
+          vitae condimentum arcu. Etiam quis sapien id magna ultrices porttitor.
+          Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc
+          convallis bibendum vestibulum. Aliquam euismod feugiat interdum. In
+          vitae dolor nec risus porta malesuada.
+        </p>
+      </div>
+      <div id="footer"><h2>Sticky footer</h2></div>
+    </div>
+  </body>
+</html>

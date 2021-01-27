@@ -1,0 +1,47 @@
+.example-pricing {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  .card-princing {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 300px;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    background-color: #fff;
+    .card-princing-header {
+      padding: 0.5rem 1rem;
+      background-color: rgba(0, 0, 0, 0.03);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+      text-align: center;
+      h2 {
+        font-weight: 400 !important;
+        margin: 0;
+      }
+    }
+    .card-princing-body {
+      flex: 1 1 auto;
+      padding: 1rem 1rem;
+      display: flex;
+      flex-direction: column;
+      ul {
+        padding-left: 0;
+        list-style: none;
+        li {
+        }
+      }
+      a {
+        align-self: center;
+        margin-top: auto;
+        padding: 8px 15px 6px;
+        font-size: 0.7em;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        border-radius: 3px;
+        background: #f34a4e;
+        transition: all 0.275s;
+      }
+    }
+  }
+}

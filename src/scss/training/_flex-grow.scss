@@ -1,0 +1,36 @@
+.flex-grow {
+  .flex-container {
+    display: flex;
+    .item01 {
+      flex-grow: 1;
+    }
+    .item02 {
+      flex-grow: 0;
+    }
+    .item03 {
+      flex-grow: 0;
+    }
+    &.case2 {
+      .item01 {
+        flex-grow: 1;
+      }
+      .item02 {
+        flex-grow: 1;
+      }
+      .item03 {
+        flex-grow: 2;
+      }
+    }
+    &.case3 {
+      .item01 {
+        flex-grow: 1;
+      }
+      .item02 {
+        flex-grow: 2;
+      }
+      .item03 {
+        flex-grow: 1;
+      }
+    }
+  }
+}
